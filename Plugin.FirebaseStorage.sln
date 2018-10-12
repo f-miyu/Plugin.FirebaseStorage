@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Plugin.FirebaseStorage.Shared", "Plugin.FirebaseStorage.Shared\Plugin.FirebaseStorage.Shared.shproj", "{9B197560-9A36-47E1-8B6D-7F172E7BA19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.FirebaseStorage.iOS", "Plugin.FirebaseStorage.iOS\Plugin.FirebaseStorage.iOS.csproj", "{1159FD40-6872-4F00-87EE-EB25ACC8DC45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.FirebaseStorage.Android", "Plugin.FirebaseStorage.Android\Plugin.FirebaseStorage.Android.csproj", "{15FD33F6-56E5-4F72-A83E-AFB64DFA5C69}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Plugin.FirebaseStorage.NuGet", "Plugin.FirebaseStorage.NuGet\Plugin.FirebaseStorage.NuGet.nuproj", "{1F85972C-A53F-43B9-9327-BDFC896DAD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.FirebaseStorage", "Plugin.FirebaseStorage\Plugin.FirebaseStorage.csproj", "{56FFC200-4340-4EC5-90D0-5C3E034D07FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1159FD40-6872-4F00-87EE-EB25ACC8DC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1159FD40-6872-4F00-87EE-EB25ACC8DC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1159FD40-6872-4F00-87EE-EB25ACC8DC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1159FD40-6872-4F00-87EE-EB25ACC8DC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15FD33F6-56E5-4F72-A83E-AFB64DFA5C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15FD33F6-56E5-4F72-A83E-AFB64DFA5C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15FD33F6-56E5-4F72-A83E-AFB64DFA5C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15FD33F6-56E5-4F72-A83E-AFB64DFA5C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F85972C-A53F-43B9-9327-BDFC896DAD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F85972C-A53F-43B9-9327-BDFC896DAD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F85972C-A53F-43B9-9327-BDFC896DAD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F85972C-A53F-43B9-9327-BDFC896DAD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FFC200-4340-4EC5-90D0-5C3E034D07FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FFC200-4340-4EC5-90D0-5C3E034D07FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FFC200-4340-4EC5-90D0-5C3E034D07FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FFC200-4340-4EC5-90D0-5C3E034D07FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
