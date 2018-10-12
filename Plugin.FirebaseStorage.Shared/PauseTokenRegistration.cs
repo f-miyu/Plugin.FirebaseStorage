@@ -1,10 +1,11 @@
 ﻿using System;
 namespace Plugin.FirebaseStorage
 {
-    public class PauseTokenRegistration
+    public class PauseTokenRegistration : IDisposable
     {
-        public PauseTokenRegistration()
+        public void Dispose()
         {
+
         }
     }
 }

@@ -8,7 +8,6 @@ namespace Plugin.FirebaseStorage
         public PauseToken(PauseTokenSource source)
         {
             _source = source;
-
         }
 
         public void Register(Action onPaused, Action onResumed)
