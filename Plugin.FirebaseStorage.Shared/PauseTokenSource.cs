@@ -3,17 +3,18 @@ namespace Plugin.FirebaseStorage
 {
     public class PauseTokenSource
     {
-        internal event EventHandler Paused;
-        internal event EventHandler Resumed;
+        internal IStorageTask StorageTask { get; set; }
+
+        public bool IsPuased => StorageTask?.IsPaused ?? false;
 
         public void Pause()
         {
-            Paused?.Invoke(this, EventArgs.Empty);
+            StorageTask?.Puase();
         }
 
         public void Resume()
         {
-            Resumed?.Invoke(this, EventArgs.Empty);
+            StorageTask?.Resume();
         }
     }
 }
