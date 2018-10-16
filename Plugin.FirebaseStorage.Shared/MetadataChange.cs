@@ -59,7 +59,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        IDictionary<string, string> CustomMetadata { get; set; }
+        public IDictionary<string, string> CustomMetadata { get; set; }
 
         internal bool IsCacheControlChanged { get; private set; }
         internal bool IsContentDispositionChanged { get; private set; }

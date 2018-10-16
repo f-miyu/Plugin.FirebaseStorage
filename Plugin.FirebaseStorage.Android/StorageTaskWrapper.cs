@@ -2,7 +2,7 @@
 using Firebase.Storage;
 namespace Plugin.FirebaseStorage
 {
-    public class UploadTaskWrapper : IStorageTask
+    public class StorageTaskWrapper : IStorageTask
     {
         internal StorageTask StorageTask { get; }
 
@@ -10,7 +10,7 @@ namespace Plugin.FirebaseStorage
 
         public bool IsInProgress => StorageTask.IsInProgress;
 
-        public UploadTaskWrapper(StorageTask storageTask)
+        public StorageTaskWrapper(StorageTask storageTask)
         {
             StorageTask = storageTask;
         }

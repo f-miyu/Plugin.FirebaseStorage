@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Plugin.FirebaseStorage
 {
-    public interface IDownloadTaskSnapshot
+    public interface IDownloadState
     {
         long BytesTransferred { get; }
         long TotalByteCount { get; }

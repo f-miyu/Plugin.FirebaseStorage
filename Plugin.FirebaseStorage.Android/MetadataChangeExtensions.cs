@@ -39,11 +39,11 @@ namespace Plugin.FirebaseStorage
             {
                 foreach (var (key, value) in self.CustomMetadata)
                 {
-
+                    builder.SetCustomMetadata(key, value);
                 }
             }
 
-            return storageMetadata;
+            return builder.Build();
         }
     }
 }

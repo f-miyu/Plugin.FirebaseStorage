@@ -2,7 +2,7 @@
 using Firebase.Storage;
 namespace Plugin.FirebaseStorage
 {
-    public class UploadTaskSnapshotWrapper : IUploadTaskSnapshot
+    public class UploadTaskSnapshotWrapper : IUploadState
     {
         internal UploadTask.TaskSnapshot TaskSnapshot { get; }
 

@@ -7,7 +7,6 @@ namespace Plugin.FirebaseStorage
 
         public FirebaseStorageImplementation()
         {
-            _instance.getre
         }
     }
 }

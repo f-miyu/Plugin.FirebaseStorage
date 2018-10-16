@@ -128,8 +128,15 @@ namespace Plugin.FirebaseStorage
 
             downloadTask.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
-
-            }))
+                if (task.IsSuccessful)
+                {
+                    var stream = task.Result;
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
 
             if (progress != null)
             {
@@ -155,30 +162,7 @@ namespace Plugin.FirebaseStorage
 
         public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
         {
-            var tcs = new TaskCompletionSource<byte[]>();
-
-            var downloadTask = StorageReference.GetBytes(maxDownloadSizeBytes);
-
-            if (progress != null)
-            {
-                downloadTask.(new OnProgressHandlerListener(snapshot =>
-                {
-                    var downloadTaskSnapshot = snapshot.JavaCast<StreamDownloadTask.TaskSnapshot>();
-                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
-                }));
-            }
-
-            if (cancellationToken != default(CancellationToken))
-            {
-                cancellationToken.Register(() => downloadTask.Cancel());
-            }
-
-            if (pauseToken != default(PauseToken))
-            {
-                pauseToken.SetStorageTask(new StorageTaskWrapper(downloadTask));
-            }
-
-            return tcs.Task;
+            throw new NotImplementedException();
         }
 
         public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
