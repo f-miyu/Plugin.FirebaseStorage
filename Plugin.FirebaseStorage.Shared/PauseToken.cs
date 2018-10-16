@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Threading;
-using System.Runtime.CompilerServices;
+
 namespace Plugin.FirebaseStorage
 {
     public struct PauseToken : IEquatable<PauseToken>
@@ -9,21 +8,17 @@ namespace Plugin.FirebaseStorage
 
         private readonly PauseTokenSource _source;
 
-        internal IStorageTask StorageTask
-        {
-            get => _source?.StorageTask;
-            set
-            {
-                if (_source != null)
-                {
-                    _source.StorageTask = value;
-                }
-            }
-        }
-
         public PauseToken(PauseTokenSource source)
         {
             _source = source;
+        }
+
+        internal void SetStorageTask(IStorageTask storageTask)
+        {
+            if (_source != null)
+            {
+                _source.StorageTask = storageTask;
+            }
         }
 
         public bool Equals(PauseToken other)

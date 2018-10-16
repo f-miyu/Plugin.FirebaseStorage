@@ -14,13 +14,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)IStorage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IStorageReference.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IDownloadTask.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IUploadTask.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IStorageMetadata.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PauseTokenSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PauseToken.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IStorageTask.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FirebaseStorageException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ErrorType.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IUploadTaskSnapshot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IUploadState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetadataChange.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDownloadState.cs" />
   </ItemGroup>
 </Project>

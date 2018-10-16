@@ -56,10 +56,11 @@
     <Compile Include="StorageWrapper.cs" />
     <Compile Include="StorageReferenceWrapper.cs" />
     <Compile Include="StorageMetadataWrapper.cs" />
-    <Compile Include="UploadTaskWrapper.cs" />
     <Compile Include="StorageUploadTaskWrapper.cs" />
     <Compile Include="ExceptionMapper.cs" />
-    <Compile Include="UploadTaskSnapshotWrapper.cs" />
+    <Compile Include="MetadataChangeExtensions.cs" />
+    <Compile Include="StorageDownloadTaskWrapper.cs" />
+    <Compile Include="StorageTaskSnapshotWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

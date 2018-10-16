@@ -13,21 +13,33 @@ namespace Plugin.FirebaseStorage
 
         public long Size => StorageMetadata.Size;
 
-        public string CacheControl { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string ContentDisposition { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string ContentEncoding { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string ContentLanguage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string ContentType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Dictionary<string, string> CustomMetadata { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string CacheControl => StorageMetadata.CacheControl;
 
-        internal StorageMetadataWrapper(StorageMetadata storageMetadata)
+        public string ContentDisposition => StorageMetadata.ContentDisposition;
+
+        public string ContentEncoding => StorageMetadata.ContentEncoding;
+
+        public string ContentLanguage => StorageMetadata.ContentLanguage;
+
+        public string ContentType => StorageMetadata.ContentType;
+
+        public IDictionary<string, string> CustomMetadata
         {
-            StorageMetadata = storageMetadata;
+            get
+            {
+                var customMetadata = new Dictionary<string, string>();
+                foreach (var (key, value) in StorageMetadata.CustomMetadata)
+                {
+                    customMetadata.Add(key.ToString(), value.ToString());
+                }
+
+                return customMetadata;
+            }
         }
 
-        public StorageMetadataWrapper()
+        public StorageMetadataWrapper(StorageMetadata storageMetadata)
         {
-
+            StorageMetadata = storageMetadata;
         }
     }
 }

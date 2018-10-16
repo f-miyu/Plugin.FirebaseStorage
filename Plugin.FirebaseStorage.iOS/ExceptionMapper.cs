@@ -7,7 +7,7 @@ namespace Plugin.FirebaseStorage
     {
         public static Exception Map(NSErrorException exception)
         {
-            return new FirebaseStorageException(exception.Error.LocalizedDescription, exception, ErrorType.Other);
+            return new FirebaseStorageException(exception.Error.LocalizedDescription, exception, ErrorType.Unkown);
         }
     }
 }

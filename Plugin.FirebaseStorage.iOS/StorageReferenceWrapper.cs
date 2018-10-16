@@ -25,7 +25,7 @@ namespace Plugin.FirebaseStorage
             return new StorageReferenceWrapper(reference);
         }
 
-        public Task PutStreamAsync(Stream stream, IProgress<IUploadTaskSnapshot> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutStreamAsync(Stream stream, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
         {
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
@@ -33,69 +33,174 @@ namespace Plugin.FirebaseStorage
             using (var ms = new MemoryStream())
             {
                 stream.CopyTo(ms);
-                return PutBytesAsync(ms.ToArray(), progress, cancellationToken, pauseToken);
+                return PutBytesAsync(ms.ToArray(), metadata, progress, cancellationToken, pauseToken);
             }
         }
 
-        public async Task PutBytesAsync(byte[] bytes, IProgress<IUploadTaskSnapshot> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutBytesAsync(byte[] bytes, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
         {
             if (bytes == null)
                 throw new ArgumentNullException(nameof(bytes));
 
-            StorageUploadTask storageUploadTask = null;
-            string observer = null;
-            CancellationTokenRegistration? registration = null;
+            var data = NSData.FromArray(bytes);
+            var tcs = new TaskCompletionSource<bool>();
 
+            var uploadTask = StorageReference.PutData(data, metadata?.ToStorageMetadata(), (storageMetadata, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            if (progress != null)
+            {
+                uploadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
+            }
+
+            if (cancellationToken != default(CancellationToken))
+            {
+                cancellationToken.Register(uploadTask.Cancel);
+            }
+
+            if (pauseToken != default(PauseToken))
+            {
+                pauseToken.SetStorageTask(new StorageUploadTaskWrapper(uploadTask));
+            }
+
+            return tcs.Task;
+        }
+
+        public Task PutFileAsync(string filePath, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        {
+            if (filePath == null)
+                throw new ArgumentNullException(nameof(filePath));
+
+            var tcs = new TaskCompletionSource<bool>();
+
+            var uploadTask = StorageReference.PutFile(NSUrl.FromFilename(filePath), metadata?.ToStorageMetadata(), (storageMetadata, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            if (progress != null)
+            {
+                uploadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
+            }
+
+            if (cancellationToken != default(CancellationToken))
+            {
+                cancellationToken.Register(uploadTask.Cancel);
+            }
+
+            if (pauseToken != default(PauseToken))
+            {
+                pauseToken.SetStorageTask(new StorageUploadTaskWrapper(uploadTask));
+            }
+
+            return tcs.Task;
+        }
+
+        public async Task<Stream> GetStreamAsync(IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        {
+            var data = await GetBytesAsync(long.MaxValue, progress, cancellationToken, pauseToken).ConfigureAwait(false);
+            return new MemoryStream(data);
+        }
+
+        public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        {
+            var tcs = new TaskCompletionSource<byte[]>();
+
+            var downloadTask = StorageReference.GetData(maxDownloadSizeBytes, (data, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                }
+                else
+                {
+                    tcs.SetResult(data.ToArray());
+                }
+            });
+
+            if (progress != null)
+            {
+                downloadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
+            }
+
+            if (cancellationToken != default(CancellationToken))
+            {
+                cancellationToken.Register(downloadTask.Cancel);
+            }
+
+            if (pauseToken != default(PauseToken))
+            {
+                pauseToken.SetStorageTask(new StorageDownloadTaskWrapper(downloadTask));
+            }
+
+            return tcs.Task;
+        }
+
+        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        {
+            if (filePath == null)
+                throw new ArgumentNullException(nameof(filePath));
+
+            var url = NSUrl.FromFilename(filePath);
+
+            var tcs = new TaskCompletionSource<bool>();
+
+            var downloadTask = StorageReference.WriteToFile(url, (data, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            if (progress != null)
+            {
+                downloadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
+            }
+
+            if (cancellationToken != default(CancellationToken))
+            {
+                cancellationToken.Register(downloadTask.Cancel);
+            }
+
+            if (pauseToken != default(PauseToken))
+            {
+                pauseToken.SetStorageTask(new StorageDownloadTaskWrapper(downloadTask));
+            }
+
+            return tcs.Task;
+        }
+
+        public async Task<Uri> GetDownloadUrlAsync()
+        {
             try
             {
-                var data = NSData.FromArray(bytes);
-                var tcs = new TaskCompletionSource<bool>();
-
-                storageUploadTask = StorageReference.PutData(data, null, (metadata, error) =>
-                {
-                    if (error != null)
-                    {
-                        tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
-                    }
-                    else
-                    {
-                        tcs.SetResult(true);
-                    }
-                });
-
-                if (progress != null)
-                {
-                    observer = storageUploadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new UploadTaskSnapshotWrapper(snapshot)));
-                }
-
-                if (cancellationToken != default(CancellationToken))
-                {
-                    registration = cancellationToken.Register(storageUploadTask.Cancel);
-                }
-
-                if (pauseToken != default(PauseToken))
-                {
-                    pauseToken.StorageTask = new StorageUploadTaskWrapper(storageUploadTask);
-                }
-
-                await tcs.Task.ConfigureAwait(false);
+                var url = await StorageReference.GetDownloadUrlAsync().ConfigureAwait(false);
+                return new Uri(url.AbsoluteString);
             }
-            finally
+            catch (NSErrorException e)
             {
-                if (storageUploadTask != null)
-                {
-                    if (observer != null)
-                    {
-                        storageUploadTask.RemoveObserver(observer);
-                    }
-
-                    if (registration != null)
-                    {
-                        registration.Value.Dispose();
-                    }
-
-                    pauseToken.StorageTask = null;
-                }
+                throw ExceptionMapper.Map(e);
             }
         }
     }

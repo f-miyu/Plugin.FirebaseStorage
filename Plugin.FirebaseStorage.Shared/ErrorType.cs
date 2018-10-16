@@ -3,6 +3,16 @@ namespace Plugin.FirebaseStorage
 {
     public enum ErrorType
     {
-        Other,
+        Unkown,
+        ObjectNotFound,
+        BucketNotFound,
+        ProjectNotFound,
+        QuotaExceeded,
+        Unauthenticated,
+        Unauthorized,
+        RetryLimitExceeded,
+        NonMatchingChecksum,
+        Canceled,
+        DownloadSizeExceeded
     }
 }

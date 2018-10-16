@@ -12,6 +12,6 @@ namespace Plugin.FirebaseStorage
         string ContentEncoding { get; }
         string ContentLanguage { get; }
         string ContentType { get; }
-        Dictionary<string, string> CustomMetadata { get; set; }
+        IDictionary<string, string> CustomMetadata { get; }
     }
 }
