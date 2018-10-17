@@ -5,6 +5,8 @@ namespace Plugin.FirebaseStorage
     {
         internal Firebase.Storage.FirebaseStorage Storage { get; }
 
+        public IStorageReference RootReference => new StorageReferenceWrapper(Storage.Reference);
+
         public StorageWrapper(Firebase.Storage.FirebaseStorage storage)
         {
             Storage = storage;
@@ -19,12 +21,6 @@ namespace Plugin.FirebaseStorage
         public IStorageReference GetReferenceFromUrl(string url)
         {
             var reference = Storage.GetReferenceFromUrl(url);
-            return new StorageReferenceWrapper(reference);
-        }
-
-        public IStorageReference GetRootReference()
-        {
-            var reference = Storage.Reference;
             return new StorageReferenceWrapper(reference);
         }
     }

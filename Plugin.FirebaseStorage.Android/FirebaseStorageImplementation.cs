@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Plugin.FirebaseStorage
 {
     public class FirebaseStorageImplementation : IFirebaseStorage
     {
-        private readonly Firebase.Storage.FirebaseStorage _instance = Firebase.Storage.FirebaseStorage.Instance;
+        public IStorage Storage => new StorageWrapper(Firebase.Storage.FirebaseStorage.Instance);
 
-        public FirebaseStorageImplementation()
+        public IStorage GetStorage(string url)
         {
+            if (url == null)
+                throw new ArgumentNullException(nameof(url));
+
+            return new StorageWrapper(Firebase.Storage.FirebaseStorage.GetInstance(url));
         }
     }
 }

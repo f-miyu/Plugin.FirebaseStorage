@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Firebase.Storage;
+
 namespace Plugin.FirebaseStorage
 {
     public class StorageMetadataWrapper : IStorageMetadata
@@ -11,7 +12,7 @@ namespace Plugin.FirebaseStorage
 
         public string Path => StorageMetadata.Path;
 
-        public long Size => StorageMetadata.Size;
+        public long Size => StorageMetadata.SizeBytes;
 
         public string CacheControl => StorageMetadata.CacheControl;
 
@@ -28,9 +29,9 @@ namespace Plugin.FirebaseStorage
             get
             {
                 var customMetadata = new Dictionary<string, string>();
-                foreach (var (key, value) in StorageMetadata.CustomMetadata)
+                foreach (var key in StorageMetadata.CustomMetadataKeys)
                 {
-                    customMetadata.Add(key.ToString(), value.ToString());
+                    customMetadata.Add(key, StorageMetadata.GetCustomMetadata(key));
                 }
                 return customMetadata;
             }

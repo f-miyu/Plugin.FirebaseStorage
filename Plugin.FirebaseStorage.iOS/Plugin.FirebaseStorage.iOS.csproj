@@ -44,10 +44,10 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Firebase.Core">
-      <HintPath>..\packages\Xamarin.Firebase.iOS.Core.5.0.5\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Firebase.iOS.Core.5.1.3\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Storage">
-      <HintPath>..\packages\Xamarin.Firebase.iOS.Storage.3.0.0\lib\Xamarin.iOS10\Firebase.Storage.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Firebase.iOS.Storage.3.0.2\lib\Xamarin.iOS10\Firebase.Storage.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

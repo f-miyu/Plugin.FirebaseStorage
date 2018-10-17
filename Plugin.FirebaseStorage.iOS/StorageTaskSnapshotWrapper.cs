@@ -16,6 +16,8 @@ namespace Plugin.FirebaseStorage
         public StorageTaskSnapshotWrapper(StorageTaskSnapshot storageTaskSnapshot)
         {
             StorageTaskSnapshot = storageTaskSnapshot;
+
+            var task = StorageTaskSnapshot.GetTask<StorageDownloadTask>();
         }
     }
 }
