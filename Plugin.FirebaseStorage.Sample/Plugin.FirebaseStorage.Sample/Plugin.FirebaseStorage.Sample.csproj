@@ -5,11 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.912540" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
     <PackageReference Include="ReactiveProperty" Version="5.2.0" />
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Xamarin.Essentials" Version="0.11.0-preview" />
   </ItemGroup>
 
-  <Import Project="..\..\Plugin.FirebaseStorage.Shared\Plugin.FirebaseStorage.Shared.projitems" Label="Shared" Condition="Exists('..\..\Plugin.FirebaseStorage.Shared\Plugin.FirebaseStorage.Shared.projitems')" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Plugin.FirebaseStorage\Plugin.FirebaseStorage.csproj" />
+  </ItemGroup>
 </Project>

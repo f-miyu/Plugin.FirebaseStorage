@@ -21,7 +21,7 @@ namespace Plugin.FirebaseStorage.Sample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            //FirebaseStorage.Init();
+            FirebaseStorage.Init();
 
             global::Xamarin.Forms.Forms.Init();
 

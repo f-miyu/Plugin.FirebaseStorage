@@ -5,6 +5,8 @@ namespace Plugin.FirebaseStorage
     {
         internal IStorageTask StorageTask { get; set; }
 
+        public PauseToken Token => new PauseToken(this);
+
         public bool IsPuased => StorageTask?.IsPaused ?? false;
 
         public void Pause()

@@ -41,18 +41,11 @@ namespace Plugin.FirebaseStorage
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
 
-            UploadTask uploadTask;
-
-            if (metadata != null)
+            using (var ms = new MemoryStream())
             {
-                uploadTask = StorageReference.PutStream(stream, metadata.ToStorageMetadata());
+                stream.CopyTo(ms);
+                return PutBytesAsync(ms.ToArray(), metadata, progress, cancellationToken, pauseToken);
             }
-            else
-            {
-                uploadTask = StorageReference.PutStream(stream);
-            }
-
-            return Upload(uploadTask, progress, cancellationToken, pauseToken);
         }
 
         public Task PutBytesAsync(byte[] bytes, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
@@ -314,7 +307,7 @@ namespace Plugin.FirebaseStorage
                     var data = new byte[16384];
                     int n = 0;
                     long total = 0;
-                    while ((n = stream.Read(data, 0, data.Length)) != -1)
+                    while ((n = stream.Read(data, 0, data.Length)) > 0)
                     {
                         total += n;
                         if (total > _maxDownloadSizeBytes)
