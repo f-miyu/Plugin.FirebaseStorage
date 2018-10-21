@@ -12,20 +12,23 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using Prism.Services;
+using Xamarin.Essentials;
 
 namespace Plugin.FirebaseStorage.Sample.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        public AsyncReactiveCommand PickPhotmCommand { get; } = new AsyncReactiveCommand();
+        public AsyncReactiveCommand SelectImageCommand { get; } = new AsyncReactiveCommand();
         public ReactivePropertySlim<ImageSource> Image { get; } = new ReactivePropertySlim<ImageSource>();
+        public ReactivePropertySlim<double> UploadProgress { get; } = new ReactivePropertySlim<double>();
+        public ReactivePropertySlim<double> DownloadProgress { get; } = new ReactivePropertySlim<double>();
 
-        public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+        public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
             Title = "Main Page";
 
-            PickPhotmCommand.Subscribe(async () =>
+            SelectImageCommand.Subscribe(async () =>
             {
                 if (!CrossMedia.Current.IsPickPhotoSupported)
                 {
@@ -43,15 +46,22 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                 try
                 {
                     var name = Path.GetFileName(file.Path);
+                    var stream = file.GetStream();
+
+                    file.Dispose();
+
+                    UploadProgress.Value = 0;
+                    DownloadProgress.Value = 0;
 
                     var reference = CrossFirebaseStorage.Current.Storage.RootReference.GetChild(name);
 
                     var path = reference.Path;
+                    var pts = new PauseTokenSource();
 
-                    var progress = new Progress<IUploadState>();
-                    progress.ProgressChanged += (sender, e) =>
+                    var uploadProgress = new Progress<IUploadState>();
+                    uploadProgress.ProgressChanged += (sender, e) =>
                     {
-                        System.Diagnostics.Debug.WriteLine($"{e.BytesTransferred}, {e.TotalByteCount}, {file.GetStream().Length}");
+                        UploadProgress.Value = e.TotalByteCount > 0 ? 100.0 * e.BytesTransferred / e.TotalByteCount : 0;
                     };
 
                     var metadata = new MetadataChange
@@ -59,36 +69,17 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                         ContentType = "image/jpeg"
                     };
 
-                    var cts = new CancellationTokenSource();
-                    var pts = new PauseTokenSource();
+                    await reference.PutStreamAsync(stream, metadata, uploadProgress);
+                    UploadProgress.Value = 100;
 
-                    var task = reference.PutStreamAsync(file.GetStream(), metadata, progress, cts.Token, pts.Token);
-                    await Task.Delay(100);
-                    pts.Resume();
-                    pts.Pause();
-                    pts.Pause();
-
-                    await Task.Delay(3000);
-
-                    pts.Resume();
-
-                    await task;
-
-                    var progress2 = new Progress<IDownloadState>();
-                    progress2.ProgressChanged += (sender, e) =>
+                    var downloadProgress = new Progress<IDownloadState>();
+                    downloadProgress.ProgressChanged += (sender, e) =>
                     {
-                        System.Diagnostics.Debug.WriteLine($"{e.BytesTransferred}, {e.TotalByteCount}");
+                        DownloadProgress.Value = e.TotalByteCount > 0 ? 100.0 * e.BytesTransferred / e.TotalByteCount : 0;
                     };
 
-
-                    var cts2 = new CancellationTokenSource();
-                    var task2 = reference.GetStreamAsync(progress2, cts2.Token);
-
-                    //await Task.Delay(900);
-
-                    //cts2.Cancel();
-
-                    var data = await task2;
+                    var data = await reference.GetStreamAsync(downloadProgress);
+                    DownloadProgress.Value = 100;
 
                     Image.Value = ImageSource.FromStream(() =>
                     {
@@ -97,13 +88,8 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                 }
                 catch (Exception e)
                 {
-                    await pageDialogService.DisplayAlertAsync("error", e.ToString(), "OK");
+                    System.Diagnostics.Debug.WriteLine(e);
                 }
-                finally
-                {
-                    file?.Dispose();
-                }
-
             });
         }
     }

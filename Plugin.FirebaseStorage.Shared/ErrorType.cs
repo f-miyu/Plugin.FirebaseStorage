@@ -8,10 +8,10 @@ namespace Plugin.FirebaseStorage
         BucketNotFound,
         ProjectNotFound,
         QuotaExceeded,
-        Unauthenticated,
-        Unauthorized,
+        NotAuthenticated,
+        NotAuthorized,
         RetryLimitExceeded,
-        NonMatchingChecksum,
+        InvalidChecksum,
         Canceled,
         DownloadSizeExceeded
     }

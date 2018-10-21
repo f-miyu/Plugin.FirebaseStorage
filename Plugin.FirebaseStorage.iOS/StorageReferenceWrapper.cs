@@ -16,11 +16,25 @@ namespace Plugin.FirebaseStorage
 
         public string Bucket => StorageReference.Bucket;
 
-        public IStorageReference Parent => new StorageReferenceWrapper(StorageReference.Parent);
+        public IStorageReference Parent
+        {
+            get
+            {
+                var parent = StorageReference.Parent;
+                return parent != null ? new StorageReferenceWrapper(parent) : null;
+            }
+        }
 
-        public IStorageReference Root => new StorageReferenceWrapper(StorageReference.Root);
+        public IStorageReference Root
+        {
+            get
+            {
+                var root = StorageReference.Root;
+                return root != null ? new StorageReferenceWrapper(root) : null;
+            }
+        }
 
-        public IStorage Storage => new StorageWrapper(StorageReference.Storage);
+        public IStorage Storage => StorageReference.Storage != null ? new StorageWrapper(StorageReference.Storage) : null;
 
         public StorageReferenceWrapper(StorageReference storageReference)
         {
@@ -155,7 +169,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
@@ -184,11 +198,6 @@ namespace Plugin.FirebaseStorage
             if (cancellationToken != default(CancellationToken))
             {
                 cancellationToken.Register(downloadTask.Cancel);
-            }
-
-            if (pauseToken != default(PauseToken))
-            {
-                pauseToken.SetStorageTask(new StorageDownloadTaskWrapper(downloadTask));
             }
 
             return tcs.Task;

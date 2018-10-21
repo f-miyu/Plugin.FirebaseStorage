@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Plugin.FirebaseStorage.Sample.Views.MainPage" 
              Title="{Binding Title}">
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Image WidthRequest="300" 
-               HeightRequest="300" 
+    <StackLayout HorizontalOptions="CenterAndExpand">
+        <Image HeightRequest="200" 
                Source="{Binding Image.Value}" />
-        <Button Text="Pick Photo" Command="{Binding PickPhotmCommand}" HorizontalOptions="Center"/>
+        <Button Text="Select image" Command="{Binding SelectImageCommand}" HorizontalOptions="Center"/>
+        <Label Text="{Binding UploadProgress.Value, StringFormat='Upload: {0:#0.##}%'}" HorizontalOptions="Center" />
+        <Label Text="{Binding DownloadProgress.Value, StringFormat='Download: {0:#0.##}%'}" HorizontalOptions="Center" />
     </StackLayout>
 </ContentPage>

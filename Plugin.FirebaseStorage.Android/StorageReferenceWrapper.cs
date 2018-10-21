@@ -19,11 +19,25 @@ namespace Plugin.FirebaseStorage
 
         public string Bucket => StorageReference.Bucket;
 
-        public IStorageReference Parent => new StorageReferenceWrapper(StorageReference.Parent);
+        public IStorageReference Parent
+        {
+            get
+            {
+                var parent = StorageReference.Parent;
+                return parent != null ? new StorageReferenceWrapper(parent) : null;
+            }
+        }
 
-        public IStorageReference Root => new StorageReferenceWrapper(StorageReference.Root);
+        public IStorageReference Root
+        {
+            get
+            {
+                var root = StorageReference.Root;
+                return root != null ? new StorageReferenceWrapper(root) : null;
+            }
+        }
 
-        public IStorage Storage => new StorageWrapper(StorageReference.Storage);
+        public IStorage Storage => StorageReference.Storage != null ? new StorageWrapper(StorageReference.Storage) : null;
 
         public StorageReferenceWrapper(StorageReference storageReference)
         {
@@ -72,7 +86,7 @@ namespace Plugin.FirebaseStorage
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
 
-            var uri = Android.Net.Uri.Parse(filePath);
+            var uri = Android.Net.Uri.FromFile(new Java.IO.File(filePath));
 
             UploadTask uploadTask;
 
@@ -171,25 +185,21 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
         {
-            var tcs = new TaskCompletionSource<byte[]>();
+            var tcs = new TaskCompletionSource<bool>();
 
-            var downloadTask = StorageReference.GetFile(Android.Net.Uri.Parse(filePath));
+            var downloadTask = StorageReference.GetFile(Android.Net.Uri.FromFile(new Java.IO.File(filePath)));
 
             downloadTask.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
                 if (task.IsSuccessful)
                 {
-                    if (!tcs.Task.IsCompleted)
-                    {
-                        var exception = StorageException.FromErrorStatus(new Statuses(CommonStatusCodes.InternalError));
-                        tcs.TrySetException(ExceptionMapper.Map(exception));
-                    }
+                    tcs.SetResult(true);
                 }
                 else
                 {
-                    tcs.TrySetException(ExceptionMapper.Map(task.Exception));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -197,19 +207,14 @@ namespace Plugin.FirebaseStorage
             {
                 downloadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
                 {
-                    var downloadTaskSnapshot = snapshot.JavaCast<StreamDownloadTask.TaskSnapshot>();
-                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
+                    var downloadTaskSnapshot = snapshot.JavaCast<FileDownloadTask.TaskSnapshot>();
+                    progress.Report(new FileDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
                 }));
             }
 
             if (cancellationToken != default(CancellationToken))
             {
                 cancellationToken.Register(() => downloadTask.Cancel());
-            }
-
-            if (pauseToken != default(PauseToken))
-            {
-                pauseToken.SetStorageTask(new StorageTaskWrapper(downloadTask));
             }
 
             return tcs.Task;

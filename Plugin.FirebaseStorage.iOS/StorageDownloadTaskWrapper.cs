@@ -8,7 +8,7 @@ namespace Plugin.FirebaseStorage
 
         public bool IsPaused => StorageDownloadTask.Snapshot.Status == StorageTaskStatus.Pause;
 
-        public bool IsInProgress => StorageDownloadTask.Snapshot.Status == StorageTaskStatus.Progress;
+        public bool IsInProgress => StorageDownloadTask.Snapshot.Status == StorageTaskStatus.Resume || StorageDownloadTask.Snapshot.Status == StorageTaskStatus.Progress;
 
         public StorageDownloadTaskWrapper(StorageDownloadTask storageDownloadTask)
         {

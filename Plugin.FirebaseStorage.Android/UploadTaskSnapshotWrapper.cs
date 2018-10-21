@@ -10,6 +10,10 @@ namespace Plugin.FirebaseStorage
 
         public long TotalByteCount => TaskSnapshot.TotalByteCount;
 
+        public IStorageReference Reference => TaskSnapshot.Storage != null ? new StorageReferenceWrapper(TaskSnapshot.Storage) : null;
+
+        public IStorageMetadata Metadata => TaskSnapshot.Metadata != null ? new StorageMetadataWrapper(TaskSnapshot.Metadata) : null;
+
         public UploadTaskSnapshotWrapper(UploadTask.TaskSnapshot taskSnapshot)
         {
             TaskSnapshot = taskSnapshot;

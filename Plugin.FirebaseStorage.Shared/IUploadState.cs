@@ -6,5 +6,7 @@ namespace Plugin.FirebaseStorage
     {
         long BytesTransferred { get; }
         long TotalByteCount { get; }
+        IStorageReference Reference { get; }
+        IStorageMetadata Metadata { get; }
     }
 }
