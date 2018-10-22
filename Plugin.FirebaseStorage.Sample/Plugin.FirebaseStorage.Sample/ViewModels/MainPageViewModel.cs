@@ -9,9 +9,6 @@ using Reactive.Bindings;
 using Plugin.Media;
 using Xamarin.Forms;
 using System.IO;
-using System.Threading.Tasks;
-using System.Threading;
-using Prism.Services;
 
 namespace Plugin.FirebaseStorage.Sample.ViewModels
 {
@@ -62,9 +59,6 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                     Url.Value = null;
 
                     var reference = CrossFirebaseStorage.Current.Storage.RootReference.GetChild(name);
-
-                    var path = reference.Path;
-                    var pts = new PauseTokenSource();
 
                     var uploadProgress = new Progress<IUploadState>();
                     uploadProgress.ProgressChanged += (sender, e) =>

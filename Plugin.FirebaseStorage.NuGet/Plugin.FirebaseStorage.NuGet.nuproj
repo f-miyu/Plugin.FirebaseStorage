@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1F85972C-A53F-43B9-9327-BDFC896DAD90}</ProjectGuid>
-    <Description>Plugin.FirebaseStorage</Description>
+    <Description>Cross platform plugin for Firebase Storage</Description>
     <PackageId>Plugin.FirebaseStorage</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
-    <Authors>f-matsushima</Authors>
+    <Authors>f-miyu</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
@@ -16,6 +16,11 @@
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>Plugin.FirebaseStorage.NuGet</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>f-miyu</Owners>
+    <PackageTags>xamarin, ios, android, xamarin.forms, plugin, firebase, storage</PackageTags>
+    <Title>Firebase Storage Plugin for Xamarin</Title>
+    <PackageProjectUrl>https://github.com/f-miyu/Plugin.FirebaseStorage</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/f-miyu/Plugin.FirebaseStorage/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
