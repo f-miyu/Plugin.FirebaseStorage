@@ -7,6 +7,8 @@ and [Xamarin.Firebase.Storage](https://www.nuget.org/packages/Xamarin.Firebase.S
 ## Setup
 Install Nuget package to each projects.
 
+[Plugin.FirebaseStorage](https://www.nuget.org/packages/Plugin.FirebaseStorage/) [![NuGet](https://img.shields.io/nuget/v/Plugin.FirebaseStorage.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.FirebaseStorage/)
+
 ### iOS
 * Add GoogleService-Info.plist to iOS project. Select BundleResource as build action.
 * Initialize as follows in AppDelegate. 
