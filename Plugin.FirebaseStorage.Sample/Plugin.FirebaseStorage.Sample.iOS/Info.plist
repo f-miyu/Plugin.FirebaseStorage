@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Plugin.FirebaseStorage.Sample</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.plugin.firebasestorage.sample2</string>
+	<string>com.plugin.firebasestorage.sample</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
