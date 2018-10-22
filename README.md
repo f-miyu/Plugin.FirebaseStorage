@@ -16,7 +16,7 @@ Plugin.FirebaseStorage.FirebaseStorage.Init();
 
 ### Android
 * Add google-services.json to Android project. Select GoogleServicesJson as build action. (If you can't select GoogleServicesJson, reload this android project.)
-* Add the following in AndroidManifest.xml
+* Add the following into AndroidManifest.xml
 
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
