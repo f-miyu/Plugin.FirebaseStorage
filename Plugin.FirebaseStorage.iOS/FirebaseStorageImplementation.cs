@@ -5,7 +5,7 @@ namespace Plugin.FirebaseStorage
 {
     public class FirebaseStorageImplementation : IFirebaseStorage
     {
-        public IStorage Storage
+        public IStorage Instance
         {
             get
             {
@@ -23,13 +23,13 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public IStorage GetStorage(string appName)
+        public IStorage GetInstance(string appName)
         {
             var app = App.From(appName);
             return new StorageWrapper(Firebase.Storage.Storage.From(app));
         }
 
-        public IStorage GetStorageFromUrl(string url)
+        public IStorage GetInstanceFromUrl(string url)
         {
             Firebase.Storage.Storage storage;
             if (string.IsNullOrEmpty(FirebaseStorage.DefaultAppName))
@@ -44,7 +44,7 @@ namespace Plugin.FirebaseStorage
             return new StorageWrapper(storage);
         }
 
-        public IStorage GetStorage(string appName, string url)
+        public IStorage GetInstance(string appName, string url)
         {
             var app = App.From(appName);
             return new StorageWrapper(Firebase.Storage.Storage.From(app, url));
