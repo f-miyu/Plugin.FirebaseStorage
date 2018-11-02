@@ -4,30 +4,30 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageTaskWrapper : IStorageTask
     {
-        internal StorageTask StorageTask { get; }
+        private readonly StorageTask _storageTask;
 
-        public bool IsPaused => StorageTask.IsPaused;
+        public bool IsPaused => _storageTask.IsPaused;
 
-        public bool IsInProgress => StorageTask.IsInProgress;
+        public bool IsInProgress => _storageTask.IsInProgress;
 
         public StorageTaskWrapper(StorageTask storageTask)
         {
-            StorageTask = storageTask;
+            _storageTask = storageTask;
         }
 
         public void Cancel()
         {
-            StorageTask.Cancel();
+            _storageTask.Cancel();
         }
 
         public void Puase()
         {
-            StorageTask.Pause();
+            _storageTask.Pause();
         }
 
         public void Resume()
         {
-            StorageTask.Resume();
+            _storageTask.Resume();
         }
     }
 }

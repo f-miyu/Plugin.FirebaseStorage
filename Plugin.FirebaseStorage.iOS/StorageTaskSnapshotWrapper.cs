@@ -5,19 +5,19 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageTaskSnapshotWrapper : IUploadState, IDownloadState
     {
-        internal StorageTaskSnapshot StorageTaskSnapshot { get; }
+        private readonly StorageTaskSnapshot _storageTaskSnapshot;
 
-        public long BytesTransferred => StorageTaskSnapshot.Progress.CompletedUnitCount;
+        public long BytesTransferred => _storageTaskSnapshot.Progress.CompletedUnitCount;
 
-        public long TotalByteCount => StorageTaskSnapshot.Progress.TotalUnitCount;
+        public long TotalByteCount => _storageTaskSnapshot.Progress.TotalUnitCount;
 
-        public IStorageReference Reference => StorageTaskSnapshot.Reference != null ? new StorageReferenceWrapper(StorageTaskSnapshot.Reference) : null;
+        public IStorageReference Reference => _storageTaskSnapshot.Reference != null ? new StorageReferenceWrapper(_storageTaskSnapshot.Reference) : null;
 
-        public IStorageMetadata Metadata => StorageTaskSnapshot.Metadata != null ? new StorageMetadataWrapper(StorageTaskSnapshot.Metadata) : null;
+        public IStorageMetadata Metadata => _storageTaskSnapshot.Metadata != null ? new StorageMetadataWrapper(_storageTaskSnapshot.Metadata) : null;
 
         public StorageTaskSnapshotWrapper(StorageTaskSnapshot storageTaskSnapshot)
         {
-            StorageTaskSnapshot = storageTaskSnapshot;
+            _storageTaskSnapshot = storageTaskSnapshot;
         }
     }
 }

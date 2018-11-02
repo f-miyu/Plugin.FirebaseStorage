@@ -8,19 +8,19 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageReferenceWrapper : IStorageReference
     {
-        internal StorageReference StorageReference { get; }
+        private readonly StorageReference _storageReference;
 
-        public string Name => StorageReference.Name;
+        public string Name => _storageReference.Name;
 
-        public string Path => StorageReference.FullPath;
+        public string Path => _storageReference.FullPath;
 
-        public string Bucket => StorageReference.Bucket;
+        public string Bucket => _storageReference.Bucket;
 
         public IStorageReference Parent
         {
             get
             {
-                var parent = StorageReference.Parent;
+                var parent = _storageReference.Parent;
                 return parent != null ? new StorageReferenceWrapper(parent) : null;
             }
         }
@@ -29,21 +29,21 @@ namespace Plugin.FirebaseStorage
         {
             get
             {
-                var root = StorageReference.Root;
+                var root = _storageReference.Root;
                 return root != null ? new StorageReferenceWrapper(root) : null;
             }
         }
 
-        public IStorage Storage => StorageReference.Storage != null ? new StorageWrapper(StorageReference.Storage) : null;
+        public IStorage Storage => _storageReference.Storage != null ? new StorageWrapper(_storageReference.Storage) : null;
 
         public StorageReferenceWrapper(StorageReference storageReference)
         {
-            StorageReference = storageReference;
+            _storageReference = storageReference;
         }
 
         public IStorageReference GetChild(string path)
         {
-            var reference = StorageReference.GetChild(path);
+            var reference = _storageReference.GetChild(path);
             return new StorageReferenceWrapper(reference);
         }
 
@@ -67,7 +67,7 @@ namespace Plugin.FirebaseStorage
             var data = NSData.FromArray(bytes);
             var tcs = new TaskCompletionSource<bool>();
 
-            var uploadTask = StorageReference.PutData(data, metadata?.ToStorageMetadata(), (storageMetadata, error) =>
+            var uploadTask = _storageReference.PutData(data, metadata?.ToStorageMetadata(), (storageMetadata, error) =>
             {
                 if (error != null)
                 {
@@ -104,7 +104,7 @@ namespace Plugin.FirebaseStorage
 
             var tcs = new TaskCompletionSource<bool>();
 
-            var uploadTask = StorageReference.PutFile(NSUrl.FromFilename(filePath), metadata?.ToStorageMetadata(), (storageMetadata, error) =>
+            var uploadTask = _storageReference.PutFile(NSUrl.FromFilename(filePath), metadata?.ToStorageMetadata(), (storageMetadata, error) =>
             {
                 if (error != null)
                 {
@@ -144,7 +144,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<byte[]>();
 
-            var downloadTask = StorageReference.GetData(maxDownloadSizeBytes, (data, error) =>
+            var downloadTask = _storageReference.GetData(maxDownloadSizeBytes, (data, error) =>
             {
                 if (error != null)
                 {
@@ -178,7 +178,7 @@ namespace Plugin.FirebaseStorage
 
             var tcs = new TaskCompletionSource<bool>();
 
-            var downloadTask = StorageReference.WriteToFile(url, (data, error) =>
+            var downloadTask = _storageReference.WriteToFile(url, (data, error) =>
             {
                 if (error != null)
                 {
@@ -207,7 +207,7 @@ namespace Plugin.FirebaseStorage
         {
             try
             {
-                var url = await StorageReference.GetDownloadUrlAsync().ConfigureAwait(false);
+                var url = await _storageReference.GetDownloadUrlAsync().ConfigureAwait(false);
                 return new Uri(url.AbsoluteString);
             }
             catch (NSErrorException e)
@@ -220,7 +220,7 @@ namespace Plugin.FirebaseStorage
         {
             try
             {
-                await StorageReference.DeleteAsync().ConfigureAwait(false);
+                await _storageReference.DeleteAsync().ConfigureAwait(false);
             }
             catch (NSErrorException e)
             {
@@ -232,7 +232,7 @@ namespace Plugin.FirebaseStorage
         {
             try
             {
-                var metadata = await StorageReference.GetMetadataAsync().ConfigureAwait(false);
+                var metadata = await _storageReference.GetMetadataAsync().ConfigureAwait(false);
                 return new StorageMetadataWrapper(metadata);
             }
             catch (NSErrorException e)
@@ -248,7 +248,7 @@ namespace Plugin.FirebaseStorage
 
             try
             {
-                var result = await StorageReference.UpdateMetadataAsync(metadata.ToStorageMetadata()).ConfigureAwait(false);
+                var result = await _storageReference.UpdateMetadataAsync(metadata.ToStorageMetadata()).ConfigureAwait(false);
                 return new StorageMetadataWrapper(result);
             }
             catch (NSErrorException e)

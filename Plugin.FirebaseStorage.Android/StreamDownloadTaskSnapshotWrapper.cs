@@ -4,17 +4,17 @@ namespace Plugin.FirebaseStorage
 {
     public class StreamDownloadTaskSnapshotWrapper : IDownloadState
     {
-        internal StreamDownloadTask.TaskSnapshot TaskSnapshot { get; }
+        private readonly StreamDownloadTask.TaskSnapshot _taskSnapshot;
 
-        public long BytesTransferred => TaskSnapshot.BytesTransferred;
+        public long BytesTransferred => _taskSnapshot.BytesTransferred;
 
-        public long TotalByteCount => TaskSnapshot.TotalByteCount;
+        public long TotalByteCount => _taskSnapshot.TotalByteCount;
 
-        public IStorageReference Reference => TaskSnapshot.Storage != null ? new StorageReferenceWrapper(TaskSnapshot.Storage) : null;
+        public IStorageReference Reference => _taskSnapshot.Storage != null ? new StorageReferenceWrapper(_taskSnapshot.Storage) : null;
 
         public StreamDownloadTaskSnapshotWrapper(StreamDownloadTask.TaskSnapshot taskSnapshot)
         {
-            TaskSnapshot = taskSnapshot;
+            _taskSnapshot = taskSnapshot;
         }
     }
 }

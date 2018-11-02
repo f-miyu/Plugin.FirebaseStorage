@@ -11,19 +11,19 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageReferenceWrapper : IStorageReference
     {
-        internal StorageReference StorageReference { get; }
+        private readonly StorageReference _storageReference;
 
-        public string Name => StorageReference.Name;
+        public string Name => _storageReference.Name;
 
-        public string Path => StorageReference.Path;
+        public string Path => _storageReference.Path;
 
-        public string Bucket => StorageReference.Bucket;
+        public string Bucket => _storageReference.Bucket;
 
         public IStorageReference Parent
         {
             get
             {
-                var parent = StorageReference.Parent;
+                var parent = _storageReference.Parent;
                 return parent != null ? new StorageReferenceWrapper(parent) : null;
             }
         }
@@ -32,21 +32,21 @@ namespace Plugin.FirebaseStorage
         {
             get
             {
-                var root = StorageReference.Root;
+                var root = _storageReference.Root;
                 return root != null ? new StorageReferenceWrapper(root) : null;
             }
         }
 
-        public IStorage Storage => StorageReference.Storage != null ? new StorageWrapper(StorageReference.Storage) : null;
+        public IStorage Storage => _storageReference.Storage != null ? new StorageWrapper(_storageReference.Storage) : null;
 
         public StorageReferenceWrapper(StorageReference storageReference)
         {
-            StorageReference = storageReference;
+            _storageReference = storageReference;
         }
 
         public IStorageReference GetChild(string path)
         {
-            var reference = StorageReference.Child(path);
+            var reference = _storageReference.Child(path);
             return new StorageReferenceWrapper(reference);
         }
 
@@ -71,11 +71,11 @@ namespace Plugin.FirebaseStorage
 
             if (metadata != null)
             {
-                uploadTask = StorageReference.PutBytes(bytes, metadata.ToStorageMetadata());
+                uploadTask = _storageReference.PutBytes(bytes, metadata.ToStorageMetadata());
             }
             else
             {
-                uploadTask = StorageReference.PutBytes(bytes);
+                uploadTask = _storageReference.PutBytes(bytes);
             }
 
             return Upload(uploadTask, progress, cancellationToken, pauseToken);
@@ -92,11 +92,11 @@ namespace Plugin.FirebaseStorage
 
             if (metadata != null)
             {
-                uploadTask = StorageReference.PutFile(uri, metadata.ToStorageMetadata());
+                uploadTask = _storageReference.PutFile(uri, metadata.ToStorageMetadata());
             }
             else
             {
-                uploadTask = StorageReference.PutFile(uri);
+                uploadTask = _storageReference.PutFile(uri);
             }
 
             return Upload(uploadTask, progress, cancellationToken, pauseToken);
@@ -150,7 +150,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<byte[]>();
 
-            var downloadTask = StorageReference.GetStream(new StreamProcessor(tcs, maxDownloadSizeBytes));
+            var downloadTask = _storageReference.GetStream(new StreamProcessor(tcs, maxDownloadSizeBytes));
 
             downloadTask.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
@@ -189,7 +189,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            var downloadTask = StorageReference.GetFile(Android.Net.Uri.FromFile(new Java.IO.File(filePath)));
+            var downloadTask = _storageReference.GetFile(Android.Net.Uri.FromFile(new Java.IO.File(filePath)));
 
             downloadTask.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
@@ -224,7 +224,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<Uri>();
 
-            StorageReference.DownloadUrl.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
+            _storageReference.DownloadUrl.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
                 if (task.IsSuccessful)
                 {
@@ -244,7 +244,7 @@ namespace Plugin.FirebaseStorage
         {
             try
             {
-                await StorageReference.DeleteAsync().ConfigureAwait(false);
+                await _storageReference.DeleteAsync().ConfigureAwait(false);
             }
             catch (Exception e)
             {
@@ -256,7 +256,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<IStorageMetadata>();
 
-            StorageReference.Metadata.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
+            _storageReference.Metadata.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
                 if (task.IsSuccessful)
                 {
@@ -276,7 +276,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<IStorageMetadata>();
 
-            StorageReference.UpdateMetadata(metadata.ToStorageMetadata()).AddOnCompleteListener(new OnCompleteHandlerListener(task =>
+            _storageReference.UpdateMetadata(metadata.ToStorageMetadata()).AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
                 if (task.IsSuccessful)
                 {

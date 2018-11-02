@@ -6,57 +6,57 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageMetadataWrapper : IStorageMetadata
     {
-        internal StorageMetadata StorageMetadata { get; }
+        private readonly StorageMetadata _storageMetadata;
 
-        public string Bucket => StorageMetadata.Bucket;
+        public string Bucket => _storageMetadata.Bucket;
 
-        public string Generation => StorageMetadata.Generation;
+        public string Generation => _storageMetadata.Generation;
 
-        public string MetadataGeneration => StorageMetadata.MetadataGeneration;
+        public string MetadataGeneration => _storageMetadata.MetadataGeneration;
 
-        public string Md5Hash => StorageMetadata.Md5Hash;
+        public string Md5Hash => _storageMetadata.Md5Hash;
 
-        public string Path => StorageMetadata.Path;
+        public string Path => _storageMetadata.Path;
 
-        public string Name => StorageMetadata.Name;
+        public string Name => _storageMetadata.Name;
 
-        public long SizeBytes => StorageMetadata.SizeBytes;
+        public long SizeBytes => _storageMetadata.SizeBytes;
 
-        public DateTimeOffset? CreationTime => new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(StorageMetadata.CreationTimeMillis);
+        public DateTimeOffset? CreationTime => new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(_storageMetadata.CreationTimeMillis);
 
-        public DateTimeOffset? UpdatedTime => new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(StorageMetadata.UpdatedTimeMillis);
+        public DateTimeOffset? UpdatedTime => new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(_storageMetadata.UpdatedTimeMillis);
 
-        public string CacheControl => StorageMetadata.CacheControl;
+        public string CacheControl => _storageMetadata.CacheControl;
 
-        public string ContentDisposition => StorageMetadata.ContentDisposition;
+        public string ContentDisposition => _storageMetadata.ContentDisposition;
 
-        public string ContentEncoding => StorageMetadata.ContentEncoding;
+        public string ContentEncoding => _storageMetadata.ContentEncoding;
 
-        public string ContentLanguage => StorageMetadata.ContentLanguage;
+        public string ContentLanguage => _storageMetadata.ContentLanguage;
 
-        public string ContentType => StorageMetadata.ContentType;
+        public string ContentType => _storageMetadata.ContentType;
 
         public IDictionary<string, string> CustomMetadata
         {
             get
             {
                 var customMetadata = new Dictionary<string, string>();
-                if (StorageMetadata.CustomMetadataKeys != null)
+                if (_storageMetadata.CustomMetadataKeys != null)
                 {
-                    foreach (var key in StorageMetadata.CustomMetadataKeys)
+                    foreach (var key in _storageMetadata.CustomMetadataKeys)
                     {
-                        customMetadata.Add(key, StorageMetadata.GetCustomMetadata(key));
+                        customMetadata.Add(key, _storageMetadata.GetCustomMetadata(key));
                     }
                 }
                 return customMetadata;
             }
         }
 
-        public IStorageReference Reference => StorageMetadata.Reference != null ? new StorageReferenceWrapper(StorageMetadata.Reference) : null;
+        public IStorageReference Reference => _storageMetadata.Reference != null ? new StorageReferenceWrapper(_storageMetadata.Reference) : null;
 
         public StorageMetadataWrapper(StorageMetadata storageMetadata)
         {
-            StorageMetadata = storageMetadata;
+            _storageMetadata = storageMetadata;
         }
     }
 }

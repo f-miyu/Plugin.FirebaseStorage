@@ -3,24 +3,24 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageWrapper : IStorage
     {
-        internal Firebase.Storage.FirebaseStorage Storage { get; }
+        private readonly Firebase.Storage.FirebaseStorage _storage;
 
-        public IStorageReference RootReference => new StorageReferenceWrapper(Storage.Reference);
+        public IStorageReference RootReference => new StorageReferenceWrapper(_storage.Reference);
 
         public StorageWrapper(Firebase.Storage.FirebaseStorage storage)
         {
-            Storage = storage;
+            _storage = storage;
         }
 
         public IStorageReference GetReferenceFromPath(string path)
         {
-            var reference = Storage.GetReference(path);
+            var reference = _storage.GetReference(path);
             return new StorageReferenceWrapper(reference);
         }
 
         public IStorageReference GetReferenceFromUrl(string url)
         {
-            var reference = Storage.GetReferenceFromUrl(url);
+            var reference = _storage.GetReferenceFromUrl(url);
             return new StorageReferenceWrapper(reference);
         }
     }

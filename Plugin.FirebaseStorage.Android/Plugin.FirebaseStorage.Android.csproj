@@ -89,6 +89,7 @@
     <Compile Include="StreamDownloadTaskSnapshotWrapper.cs" />
     <Compile Include="FileDownloadTaskSnapshotWrapper.cs" />
     <Compile Include="StorageMetadataWrapper.cs" />
+    <Compile Include="FirebaseStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

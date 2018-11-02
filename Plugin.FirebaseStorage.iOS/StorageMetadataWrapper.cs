@@ -5,44 +5,44 @@ namespace Plugin.FirebaseStorage
 {
     public class StorageMetadataWrapper : IStorageMetadata
     {
-        internal StorageMetadata StorageMetadata { get; }
+        private readonly StorageMetadata _storageMetadata;
 
-        public string Bucket => StorageMetadata.Bucket;
+        public string Bucket => _storageMetadata.Bucket;
 
-        public string Generation => StorageMetadata.Generation.ToString();
+        public string Generation => _storageMetadata.Generation.ToString();
 
-        public string MetadataGeneration => StorageMetadata.Metageneration.ToString();
+        public string MetadataGeneration => _storageMetadata.Metageneration.ToString();
 
-        public string Md5Hash => StorageMetadata.Md5Hash;
+        public string Md5Hash => _storageMetadata.Md5Hash;
 
-        public string Path => StorageMetadata.Path;
+        public string Path => _storageMetadata.Path;
 
-        public string Name => StorageMetadata.Name;
+        public string Name => _storageMetadata.Name;
 
-        public long SizeBytes => StorageMetadata.Size;
+        public long SizeBytes => _storageMetadata.Size;
 
-        public DateTimeOffset? CreationTime => StorageMetadata.TimeCreated != null ? (DateTimeOffset?)new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(StorageMetadata.TimeCreated.SecondsSinceReferenceDate) : null;
+        public DateTimeOffset? CreationTime => _storageMetadata.TimeCreated != null ? (DateTimeOffset?)new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(_storageMetadata.TimeCreated.SecondsSinceReferenceDate) : null;
 
-        public DateTimeOffset? UpdatedTime => StorageMetadata.Updated != null ? (DateTimeOffset?)new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(StorageMetadata.Updated.SecondsSinceReferenceDate) : null;
+        public DateTimeOffset? UpdatedTime => _storageMetadata.Updated != null ? (DateTimeOffset?)new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(_storageMetadata.Updated.SecondsSinceReferenceDate) : null;
 
-        public string CacheControl => StorageMetadata.CacheControl;
+        public string CacheControl => _storageMetadata.CacheControl;
 
-        public string ContentDisposition => StorageMetadata.ContentDisposition;
+        public string ContentDisposition => _storageMetadata.ContentDisposition;
 
-        public string ContentEncoding => StorageMetadata.ContentEncoding;
+        public string ContentEncoding => _storageMetadata.ContentEncoding;
 
-        public string ContentLanguage => StorageMetadata.ContentLanguage;
+        public string ContentLanguage => _storageMetadata.ContentLanguage;
 
-        public string ContentType => StorageMetadata.ContentType;
+        public string ContentType => _storageMetadata.ContentType;
 
         public IDictionary<string, string> CustomMetadata
         {
             get
             {
                 var customMetadata = new Dictionary<string, string>();
-                if (StorageMetadata.CustomMetadata != null)
+                if (_storageMetadata.CustomMetadata != null)
                 {
-                    foreach (var (key, value) in StorageMetadata.CustomMetadata)
+                    foreach (var (key, value) in _storageMetadata.CustomMetadata)
                     {
                         customMetadata.Add(key.ToString(), value.ToString());
                     }
@@ -51,11 +51,11 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public IStorageReference Reference => StorageMetadata.StorageReference != null ? new StorageReferenceWrapper(StorageMetadata.StorageReference) : null;
+        public IStorageReference Reference => _storageMetadata.StorageReference != null ? new StorageReferenceWrapper(_storageMetadata.StorageReference) : null;
 
         public StorageMetadataWrapper(StorageMetadata storageMetadata)
         {
-            StorageMetadata = storageMetadata;
+            _storageMetadata = storageMetadata;
         }
     }
 }

@@ -80,7 +80,7 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                         DownloadProgress.Value = e.TotalByteCount > 0 ? 100.0 * e.BytesTransferred / e.TotalByteCount : 0;
                     };
 
-                    var data = await reference.GetStreamAsync(downloadProgress);
+                    var data = await reference.GetStreamAsync();
                     DownloadProgress.Value = 100;
 
                     Image.Value = ImageSource.FromStream(() => data);
@@ -91,7 +91,7 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                     Size.Value = metadata.SizeBytes;
                     CreationTime.Value = metadata.CreationTime?.LocalDateTime;
 
-                    var url = await reference.GetDownloadUrlAsync();
+                    var url = await reference.GetDownloadUrlAsync(downloadProgress);
                     Url.Value = url.ToString();
                 }
                 catch (Exception e)
