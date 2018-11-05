@@ -61,7 +61,6 @@
     <Compile Include="MetadataChangeExtensions.cs" />
     <Compile Include="StorageDownloadTaskWrapper.cs" />
     <Compile Include="StorageTaskSnapshotWrapper.cs" />
-    <Compile Include="FirebaseStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

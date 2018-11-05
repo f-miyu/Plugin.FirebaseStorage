@@ -8,17 +8,8 @@ namespace Plugin.FirebaseStorage
         {
             get
             {
-                Firebase.Storage.FirebaseStorage storage;
-                if (string.IsNullOrEmpty(FirebaseStorage.DefaultAppName))
-                {
-                    storage = Firebase.Storage.FirebaseStorage.Instance;
-                }
-                else
-                {
-                    var app = Firebase.FirebaseApp.GetInstance(FirebaseStorage.DefaultAppName);
-                    storage = Firebase.Storage.FirebaseStorage.GetInstance(app);
-                }
-                return new StorageWrapper(storage);
+                var app = Firebase.FirebaseApp.GetInstance(FirebaseStorage.DefaultAppName);
+                return new StorageWrapper(Firebase.Storage.FirebaseStorage.GetInstance(app));
             }
         }
 
@@ -30,17 +21,8 @@ namespace Plugin.FirebaseStorage
 
         public IStorage GetInstanceFromUrl(string url)
         {
-            Firebase.Storage.FirebaseStorage storage;
-            if (string.IsNullOrEmpty(FirebaseStorage.DefaultAppName))
-            {
-                storage = Firebase.Storage.FirebaseStorage.GetInstance(url);
-            }
-            else
-            {
-                var app = Firebase.FirebaseApp.GetInstance(FirebaseStorage.DefaultAppName);
-                storage = Firebase.Storage.FirebaseStorage.GetInstance(app, url);
-            }
-            return new StorageWrapper(storage);
+            var app = Firebase.FirebaseApp.GetInstance(FirebaseStorage.DefaultAppName);
+            return new StorageWrapper(Firebase.Storage.FirebaseStorage.GetInstance(app, url));
         }
 
         public IStorage GetInstance(string appName, string url)

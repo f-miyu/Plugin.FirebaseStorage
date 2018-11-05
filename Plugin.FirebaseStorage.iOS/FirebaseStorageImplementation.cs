@@ -5,23 +5,7 @@ namespace Plugin.FirebaseStorage
 {
     public class FirebaseStorageImplementation : IFirebaseStorage
     {
-        public IStorage Instance
-        {
-            get
-            {
-                Firebase.Storage.Storage storage;
-                if (string.IsNullOrEmpty(FirebaseStorage.DefaultAppName))
-                {
-                    storage = Firebase.Storage.Storage.DefaultInstance;
-                }
-                else
-                {
-                    var app = App.From(FirebaseStorage.DefaultAppName);
-                    storage = Firebase.Storage.Storage.From(app);
-                }
-                return new StorageWrapper(storage);
-            }
-        }
+        public IStorage Instance => new StorageWrapper(Firebase.Storage.Storage.DefaultInstance);
 
         public IStorage GetInstance(string appName)
         {
@@ -31,17 +15,7 @@ namespace Plugin.FirebaseStorage
 
         public IStorage GetInstanceFromUrl(string url)
         {
-            Firebase.Storage.Storage storage;
-            if (string.IsNullOrEmpty(FirebaseStorage.DefaultAppName))
-            {
-                storage = Firebase.Storage.Storage.From(url);
-            }
-            else
-            {
-                var app = App.From(FirebaseStorage.DefaultAppName);
-                storage = Firebase.Storage.Storage.From(app, url);
-            }
-            return new StorageWrapper(storage);
+            return new StorageWrapper(Firebase.Storage.Storage.From(url));
         }
 
         public IStorage GetInstance(string appName, string url)

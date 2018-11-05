@@ -17,6 +17,8 @@ namespace Plugin.FirebaseStorage.Sample.Droid
 
             base.OnCreate(bundle);
 
+            FirebaseStorage.Init(this);
+
             CrossCurrentActivity.Current.Init(this, bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
