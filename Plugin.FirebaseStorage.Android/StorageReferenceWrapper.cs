@@ -220,24 +220,17 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task<Uri> GetDownloadUrlAsync()
+        public async Task<Uri> GetDownloadUrlAsync()
         {
-            var tcs = new TaskCompletionSource<Uri>();
-
-            _storageReference.DownloadUrl.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
+            try
             {
-                if (task.IsSuccessful)
-                {
-                    var uri = task.Result.JavaCast<Android.Net.Uri>();
-                    tcs.SetResult(new Uri(uri.ToString()));
-                }
-                else
-                {
-                    tcs.SetException(ExceptionMapper.Map(task.Exception));
-                }
-            }));
-
-            return tcs.Task;
+                var uri = await _storageReference.GetDownloadUrlAsync().ConfigureAwait(false);
+                return new Uri(uri.ToString());
+            }
+            catch (Exception e)
+            {
+                throw ExceptionMapper.Map(e);
+            }
         }
 
         public async Task DeleteAsync()
@@ -256,7 +249,7 @@ namespace Plugin.FirebaseStorage
         {
             var tcs = new TaskCompletionSource<IStorageMetadata>();
 
-            _storageReference.Metadata.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
+            _storageReference.GetMetadata().AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
                 if (task.IsSuccessful)
                 {
@@ -305,10 +298,9 @@ namespace Plugin.FirebaseStorage
 
             public void DoInBackground(StreamDownloadTask.TaskSnapshot state, Stream stream)
             {
+                var buffer = new ByteArrayOutputStream();
                 try
                 {
-                    var buffer = new ByteArrayOutputStream();
-
                     var data = new byte[16384];
                     int n = 0;
                     long total = 0;
@@ -331,6 +323,7 @@ namespace Plugin.FirebaseStorage
                 finally
                 {
                     stream.Close();
+                    buffer.Close();
                 }
             }
         }

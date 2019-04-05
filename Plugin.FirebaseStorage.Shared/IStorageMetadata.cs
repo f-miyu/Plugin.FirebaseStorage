@@ -11,8 +11,8 @@ namespace Plugin.FirebaseStorage
         string Path { get; }
         string Name { get; }
         long SizeBytes { get; }
-        DateTimeOffset? CreationTime { get; }
-        DateTimeOffset? UpdatedTime { get; }
+        DateTimeOffset CreationTime { get; }
+        DateTimeOffset UpdatedTime { get; }
         string CacheControl { get; }
         string ContentDisposition { get; }
         string ContentEncoding { get; }

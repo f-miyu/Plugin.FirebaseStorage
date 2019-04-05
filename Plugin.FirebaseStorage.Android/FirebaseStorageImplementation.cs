@@ -8,8 +8,7 @@ namespace Plugin.FirebaseStorage
         {
             get
             {
-                var app = Firebase.FirebaseApp.GetInstance(FirebaseStorage.DefaultAppName);
-                return new StorageWrapper(Firebase.Storage.FirebaseStorage.GetInstance(app));
+                return new StorageWrapper(Firebase.Storage.FirebaseStorage.Instance);
             }
         }
 
@@ -21,8 +20,7 @@ namespace Plugin.FirebaseStorage
 
         public IStorage GetInstanceFromUrl(string url)
         {
-            var app = Firebase.FirebaseApp.GetInstance(FirebaseStorage.DefaultAppName);
-            return new StorageWrapper(Firebase.Storage.FirebaseStorage.GetInstance(app, url));
+            return new StorageWrapper(Firebase.Storage.FirebaseStorage.GetInstance(url));
         }
 
         public IStorage GetInstance(string appName, string url)

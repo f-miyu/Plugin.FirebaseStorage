@@ -21,9 +21,9 @@ namespace Plugin.FirebaseStorage
 
         public long SizeBytes => _storageMetadata.Size;
 
-        public DateTimeOffset? CreationTime => _storageMetadata.TimeCreated != null ? (DateTimeOffset?)new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(_storageMetadata.TimeCreated.SecondsSinceReferenceDate) : null;
+        public DateTimeOffset CreationTime => _storageMetadata.TimeCreated != null ? new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(_storageMetadata.TimeCreated.SecondsSinceReferenceDate) : default(DateTimeOffset);
 
-        public DateTimeOffset? UpdatedTime => _storageMetadata.Updated != null ? (DateTimeOffset?)new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(_storageMetadata.Updated.SecondsSinceReferenceDate) : null;
+        public DateTimeOffset UpdatedTime => _storageMetadata.Updated != null ? new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(_storageMetadata.Updated.SecondsSinceReferenceDate) : default(DateTimeOffset);
 
         public string CacheControl => _storageMetadata.CacheControl;
 
