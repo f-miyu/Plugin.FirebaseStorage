@@ -140,31 +140,97 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public async Task<Stream> GetStreamAsync(IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public Task<Stream> GetStreamAsync(IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
         {
-            var data = await GetBytesAsync(long.MaxValue, progress, cancellationToken).ConfigureAwait(false);
-            return new MemoryStream(data);
+            var tcs = new TaskCompletionSource<Stream>();
+
+            var downloadTask = _storageReference.Stream;
+
+            downloadTask.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
+            {
+                if (task.IsSuccessful)
+                {
+                    var downloadTaskSnapshot = task.Result.JavaCast<StreamDownloadTask.TaskSnapshot>();
+                    Task.Run(() =>
+                    {
+                        var ms = new MemoryStream();
+                        downloadTaskSnapshot.Stream.CopyTo(ms);
+                        ms.Seek(0, SeekOrigin.Begin);
+                        tcs.TrySetResult(ms);
+                    })
+                    .ContinueWith(t =>
+                    {
+                        tcs.TrySetException(t.Exception);
+                    }, TaskContinuationOptions.OnlyOnFaulted);
+                }
+                else
+                {
+                    tcs.TrySetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            if (progress != null)
+            {
+                downloadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
+                {
+                    var downloadTaskSnapshot = snapshot.JavaCast<StreamDownloadTask.TaskSnapshot>();
+                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
+                }));
+            }
+
+            if (cancellationToken != default(CancellationToken))
+            {
+                cancellationToken.Register(() => downloadTask.Cancel());
+            }
+
+            return tcs.Task;
         }
 
         public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             var tcs = new TaskCompletionSource<byte[]>();
 
-            var downloadTask = _storageReference.GetStream(new StreamProcessor(tcs, maxDownloadSizeBytes));
+            var downloadTask = _storageReference.Stream;
 
             downloadTask.AddOnCompleteListener(new OnCompleteHandlerListener(task =>
             {
                 if (task.IsSuccessful)
                 {
-                    if (!tcs.Task.IsCompleted)
+                    var downloadTaskSnapshot = task.Result.JavaCast<StreamDownloadTask.TaskSnapshot>();
+
+                    if (downloadTaskSnapshot.TotalByteCount > maxDownloadSizeBytes)
                     {
-                        var exception = StorageException.FromErrorStatus(new Statuses(CommonStatusCodes.InternalError));
-                        tcs.TrySetException(ExceptionMapper.Map(exception));
+                        tcs.TrySetException(new FirebaseStorageException("the maximum allowed buffer size was exceeded.", ErrorType.DownloadSizeExceeded));
+                    }
+                    else
+                    {
+                        Task.Run(() =>
+                        {
+                            using (var ms = new MemoryStream())
+                            {
+                                downloadTaskSnapshot.Stream.CopyTo(ms);
+                                tcs.TrySetResult(ms.ToArray());
+                            }
+                        })
+                        .ContinueWith(t =>
+                        {
+                            tcs.TrySetException(t.Exception);
+                        }, TaskContinuationOptions.OnlyOnFaulted);
                     }
                 }
                 else
                 {
                     tcs.TrySetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            downloadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
+            {
+                var downloadTaskSnapshot = snapshot.JavaCast<StreamDownloadTask.TaskSnapshot>();
+                if (downloadTaskSnapshot.TotalByteCount > maxDownloadSizeBytes)
+                {
+                    tcs.TrySetException(new FirebaseStorageException("the maximum allowed buffer size was exceeded.", ErrorType.DownloadSizeExceeded));
+                    downloadTask.Cancel();
                 }
             }));
 
@@ -283,49 +349,6 @@ namespace Plugin.FirebaseStorage
             }));
 
             return tcs.Task;
-        }
-
-        private class StreamProcessor : Java.Lang.Object, StreamDownloadTask.IStreamProcessor
-        {
-            private TaskCompletionSource<byte[]> _tcs;
-            private long _maxDownloadSizeBytes;
-
-            public StreamProcessor(TaskCompletionSource<byte[]> tcs, long maxDownloadSizeBytes)
-            {
-                _tcs = tcs;
-                _maxDownloadSizeBytes = maxDownloadSizeBytes;
-            }
-
-            public void DoInBackground(StreamDownloadTask.TaskSnapshot state, Stream stream)
-            {
-                var buffer = new ByteArrayOutputStream();
-                try
-                {
-                    var data = new byte[16384];
-                    int n = 0;
-                    long total = 0;
-                    while ((n = stream.Read(data, 0, data.Length)) > 0)
-                    {
-                        total += n;
-                        if (total > _maxDownloadSizeBytes)
-                        {
-                            throw new FirebaseStorageException("the maximum allowed buffer size was exceeded.", ErrorType.DownloadSizeExceeded);
-                        }
-                        buffer.Write(data, 0, n);
-                    }
-                    buffer.Flush();
-                    _tcs.TrySetResult(buffer.ToByteArray());
-                }
-                catch (FirebaseStorageException e)
-                {
-                    _tcs.TrySetException(e);
-                }
-                finally
-                {
-                    stream.Close();
-                    buffer.Close();
-                }
-            }
         }
     }
 }

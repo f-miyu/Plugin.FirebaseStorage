@@ -89,7 +89,7 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
 
                     Name.Value = metadata.Name;
                     Size.Value = metadata.SizeBytes;
-                    CreationTime.Value = metadata.CreationTime?.LocalDateTime;
+                    CreationTime.Value = metadata.CreationTime.LocalDateTime;
 
                     var url = await reference.GetDownloadUrlAsync();
                     Url.Value = url.ToString();
