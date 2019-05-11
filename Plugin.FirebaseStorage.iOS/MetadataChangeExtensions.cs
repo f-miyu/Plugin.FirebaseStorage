@@ -4,7 +4,7 @@ using Foundation;
 using System.Linq;
 namespace Plugin.FirebaseStorage
 {
-    public static class MetadataChangeExtensions
+    internal static class MetadataChangeExtensions
     {
         public static StorageMetadata ToStorageMetadata(this MetadataChange self)
         {

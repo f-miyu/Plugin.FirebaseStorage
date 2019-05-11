@@ -4,7 +4,7 @@ using Firebase.Storage;
 
 namespace Plugin.FirebaseStorage
 {
-    public static class ExceptionMapper
+    internal static class ExceptionMapper
     {
         public static Exception Map(Exception exception)
         {

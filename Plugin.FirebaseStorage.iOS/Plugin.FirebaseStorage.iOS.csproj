@@ -61,6 +61,7 @@
     <Compile Include="MetadataChangeExtensions.cs" />
     <Compile Include="StorageDownloadTaskWrapper.cs" />
     <Compile Include="StorageTaskSnapshotWrapper.cs" />
+    <Compile Include="StorageProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

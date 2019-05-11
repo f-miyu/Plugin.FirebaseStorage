@@ -7,6 +7,24 @@ namespace Plugin.FirebaseStorage
 
         public IStorageReference RootReference => new StorageReferenceWrapper(_storage.Reference);
 
+        public TimeSpan MaxDownloadRetryTime
+        {
+            get => TimeSpan.FromMilliseconds(_storage.MaxDownloadRetryTimeMillis);
+            set => _storage.MaxDownloadRetryTimeMillis = (long)value.TotalMilliseconds;
+        }
+
+        public TimeSpan MaxOperationRetryTime
+        {
+            get => TimeSpan.FromMilliseconds(_storage.MaxOperationRetryTimeMillis);
+            set => _storage.MaxOperationRetryTimeMillis = (long)value.TotalMilliseconds;
+        }
+
+        public TimeSpan MaxUploadRetryTime
+        {
+            get => TimeSpan.FromMilliseconds(_storage.MaxUploadRetryTimeMillis);
+            set => _storage.MaxUploadRetryTimeMillis = (long)value.TotalMilliseconds;
+        }
+
         public StorageWrapper(Firebase.Storage.FirebaseStorage storage)
         {
             _storage = storage;

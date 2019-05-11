@@ -34,7 +34,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public IStorage Storage => _storageReference.Storage != null ? new StorageWrapper(_storageReference.Storage) : null;
+        public IStorage Storage => _storageReference.Storage != null ? StorageProvider.GetStorage(_storageReference.Storage) : null;
 
         public StorageReferenceWrapper(StorageReference storageReference)
         {

@@ -6,9 +6,9 @@ using Java.Interop;
 
 namespace Plugin.FirebaseStorage
 {
-    public delegate void OnProgressHHandler(Java.Lang.Object snapshot);
+    internal delegate void OnProgressHHandler(Java.Lang.Object snapshot);
 
-    public class OnProgressHandlerListener : Java.Lang.Object, IOnProgressListener
+    internal class OnProgressHandlerListener : Java.Lang.Object, IOnProgressListener
     {
         private OnProgressHHandler _handler;
 

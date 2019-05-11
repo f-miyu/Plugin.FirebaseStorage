@@ -7,7 +7,7 @@
     <ProjectGuid>{1F85972C-A53F-43B9-9327-BDFC896DAD90}</ProjectGuid>
     <Description>Cross platform plugin for Firebase Storage</Description>
     <PackageId>Plugin.FirebaseStorage</PackageId>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>2.0.0-pre1</PackageVersion>
     <Authors>f-miyu</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
