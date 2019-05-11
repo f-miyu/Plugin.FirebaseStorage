@@ -7,7 +7,7 @@ and [Xamarin.Firebase.Storage](https://www.nuget.org/packages/Xamarin.Firebase.S
 ## Setup
 Install Nuget package to each projects.
 
-[Plugin.FirebaseStorage](https://www.nuget.org/packages/Plugin.FirebaseStorage/) [![NuGet](https://img.shields.io/nuget/v/Plugin.FirebaseStorage.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.FirebaseStorage/)
+[Plugin.FirebaseStorage](https://www.nuget.org/packages/Plugin.FirebaseStorage/) [![NuGet](https://img.shields.io/nuget/vpre/Plugin.FirebaseStorage.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.FirebaseStorage/)
 
 ### iOS
 * Add GoogleService-Info.plist to iOS project. Select BundleResource as build action.
@@ -18,12 +18,13 @@ Firebase.Core.App.Configure();
 
 ### Android
 * Add google-services.json to Android project. Select GoogleServicesJson as build action. (If you can't select GoogleServicesJson, reload this android project.)
-* Initialize as follows in MainActivity.
-```C#
-Plugin.FirebaseStorage.FirebaseStorage.Init(this);
+* Target Framework must be Android 9.0 (Pie) and Multi-Dex needs to be enabled for the android project.
+```xml
+<TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+<AndroidEnableMultiDex>true</AndroidEnableMultiDex>
 ```
-* Add the following into AndroidManifest.xml
 
+* Add the following into AndroidManifest.xml
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
