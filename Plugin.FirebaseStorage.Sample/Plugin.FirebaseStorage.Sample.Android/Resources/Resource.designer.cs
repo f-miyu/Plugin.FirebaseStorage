@@ -26,8 +26,1512 @@ namespace Plugin.FirebaseStorage.Sample.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Reactive.Bindings.Resource.String.ApplicationName = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.ApplicationName;
-			global::Reactive.Bindings.Resource.String.Hello = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.Hello;
+			global::Reactive.Bindings.Resource.Animation.abc_fade_in = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_fade_in;
+			global::Reactive.Bindings.Resource.Animation.abc_fade_out = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_fade_out;
+			global::Reactive.Bindings.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_popup_enter = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_popup_enter;
+			global::Reactive.Bindings.Resource.Animation.abc_popup_exit = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_popup_exit;
+			global::Reactive.Bindings.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_in_bottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_in_top = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_slide_in_top;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_out_bottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_out_top = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_slide_out_top;
+			global::Reactive.Bindings.Resource.Attribute.actionBarDivider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarDivider;
+			global::Reactive.Bindings.Resource.Attribute.actionBarItemBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Reactive.Bindings.Resource.Attribute.actionBarPopupTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Reactive.Bindings.Resource.Attribute.actionBarSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarSize;
+			global::Reactive.Bindings.Resource.Attribute.actionBarSplitStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTabBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTabStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTabTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarTheme;
+			global::Reactive.Bindings.Resource.Attribute.actionBarWidgetTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Reactive.Bindings.Resource.Attribute.actionButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionDropDownStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionLayout;
+			global::Reactive.Bindings.Resource.Attribute.actionMenuTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.actionMenuTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Reactive.Bindings.Resource.Attribute.actionModeBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeBackground;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCloseButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCloseDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCopyDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCutDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeFindDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModePasteDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModePopupWindowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionModeSelectAllDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeShareDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeSplitBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Reactive.Bindings.Resource.Attribute.actionModeStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionModeWebSearchDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionOverflowButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionOverflowMenuStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionProviderClass = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionProviderClass;
+			global::Reactive.Bindings.Resource.Attribute.actionViewClass = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.actionViewClass;
+			global::Reactive.Bindings.Resource.Attribute.activityChooserViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogButtonGroupStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogCenterButtons = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.alertDialogStyle;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.alertDialogTheme;
+			global::Reactive.Bindings.Resource.Attribute.allowStacking = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.allowStacking;
+			global::Reactive.Bindings.Resource.Attribute.alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.alpha;
+			global::Reactive.Bindings.Resource.Attribute.alphabeticModifiers = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Reactive.Bindings.Resource.Attribute.arrowHeadLength = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.arrowHeadLength;
+			global::Reactive.Bindings.Resource.Attribute.arrowShaftLength = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.arrowShaftLength;
+			global::Reactive.Bindings.Resource.Attribute.autoCompleteTextViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeMaxTextSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeMinTextSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Reactive.Bindings.Resource.Attribute.autoSizePresetSizes = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeStepGranularity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeTextType = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.autoSizeTextType;
+			global::Reactive.Bindings.Resource.Attribute.background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.background;
+			global::Reactive.Bindings.Resource.Attribute.backgroundSplit = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.backgroundSplit;
+			global::Reactive.Bindings.Resource.Attribute.backgroundStacked = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.backgroundStacked;
+			global::Reactive.Bindings.Resource.Attribute.backgroundTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.backgroundTint;
+			global::Reactive.Bindings.Resource.Attribute.backgroundTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.backgroundTintMode;
+			global::Reactive.Bindings.Resource.Attribute.barLength = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.barLength;
+			global::Reactive.Bindings.Resource.Attribute.borderlessButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarNegativeButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarNeutralButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarPositiveButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonGravity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonGravity;
+			global::Reactive.Bindings.Resource.Attribute.buttonPanelSideLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Reactive.Bindings.Resource.Attribute.buttonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonStyleSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Reactive.Bindings.Resource.Attribute.buttonTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonTint;
+			global::Reactive.Bindings.Resource.Attribute.buttonTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.buttonTintMode;
+			global::Reactive.Bindings.Resource.Attribute.checkboxStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.checkboxStyle;
+			global::Reactive.Bindings.Resource.Attribute.checkedTextViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.closeIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.closeIcon;
+			global::Reactive.Bindings.Resource.Attribute.closeItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.closeItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.collapseContentDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.collapseContentDescription;
+			global::Reactive.Bindings.Resource.Attribute.collapseIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.collapseIcon;
+			global::Reactive.Bindings.Resource.Attribute.color = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.color;
+			global::Reactive.Bindings.Resource.Attribute.colorAccent = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorAccent;
+			global::Reactive.Bindings.Resource.Attribute.colorBackgroundFloating = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Reactive.Bindings.Resource.Attribute.colorButtonNormal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorButtonNormal;
+			global::Reactive.Bindings.Resource.Attribute.colorControlActivated = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorControlActivated;
+			global::Reactive.Bindings.Resource.Attribute.colorControlHighlight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorControlHighlight;
+			global::Reactive.Bindings.Resource.Attribute.colorControlNormal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorControlNormal;
+			global::Reactive.Bindings.Resource.Attribute.colorError = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorError;
+			global::Reactive.Bindings.Resource.Attribute.colorPrimary = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorPrimary;
+			global::Reactive.Bindings.Resource.Attribute.colorPrimaryDark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Reactive.Bindings.Resource.Attribute.colorSwitchThumbNormal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Reactive.Bindings.Resource.Attribute.commitIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.commitIcon;
+			global::Reactive.Bindings.Resource.Attribute.contentDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentDescription;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentInsetEnd;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetEndWithActions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetLeft = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentInsetLeft;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetRight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentInsetRight;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentInsetStart;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetStartWithNavigation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Reactive.Bindings.Resource.Attribute.controlBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.controlBackground;
+			global::Reactive.Bindings.Resource.Attribute.customNavigationLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.customNavigationLayout;
+			global::Reactive.Bindings.Resource.Attribute.defaultQueryHint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.defaultQueryHint;
+			global::Reactive.Bindings.Resource.Attribute.dialogPreferredPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Reactive.Bindings.Resource.Attribute.dialogTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dialogTheme;
+			global::Reactive.Bindings.Resource.Attribute.displayOptions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.displayOptions;
+			global::Reactive.Bindings.Resource.Attribute.divider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.divider;
+			global::Reactive.Bindings.Resource.Attribute.dividerHorizontal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dividerHorizontal;
+			global::Reactive.Bindings.Resource.Attribute.dividerPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dividerPadding;
+			global::Reactive.Bindings.Resource.Attribute.dividerVertical = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dividerVertical;
+			global::Reactive.Bindings.Resource.Attribute.drawableSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.drawableSize;
+			global::Reactive.Bindings.Resource.Attribute.drawerArrowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Reactive.Bindings.Resource.Attribute.dropdownListPreferredItemHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Attribute.dropDownListViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.editTextBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.editTextBackground;
+			global::Reactive.Bindings.Resource.Attribute.editTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.editTextColor;
+			global::Reactive.Bindings.Resource.Attribute.editTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.editTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.elevation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.elevation;
+			global::Reactive.Bindings.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Reactive.Bindings.Resource.Attribute.font = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.font;
+			global::Reactive.Bindings.Resource.Attribute.fontFamily = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontFamily;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderAuthority = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderCerts = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontProviderCerts;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderFetchStrategy = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderFetchTimeout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderPackage = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontProviderPackage;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderQuery = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontProviderQuery;
+			global::Reactive.Bindings.Resource.Attribute.fontStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontStyle;
+			global::Reactive.Bindings.Resource.Attribute.fontWeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.fontWeight;
+			global::Reactive.Bindings.Resource.Attribute.gapBetweenBars = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.gapBetweenBars;
+			global::Reactive.Bindings.Resource.Attribute.goIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.goIcon;
+			global::Reactive.Bindings.Resource.Attribute.height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.height;
+			global::Reactive.Bindings.Resource.Attribute.hideOnContentScroll = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Reactive.Bindings.Resource.Attribute.homeAsUpIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Reactive.Bindings.Resource.Attribute.homeLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.homeLayout;
+			global::Reactive.Bindings.Resource.Attribute.icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.icon;
+			global::Reactive.Bindings.Resource.Attribute.iconifiedByDefault = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Reactive.Bindings.Resource.Attribute.iconTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.iconTint;
+			global::Reactive.Bindings.Resource.Attribute.iconTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.iconTintMode;
+			global::Reactive.Bindings.Resource.Attribute.imageButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.imageButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.indeterminateProgressStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Reactive.Bindings.Resource.Attribute.initialActivityCount = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.initialActivityCount;
+			global::Reactive.Bindings.Resource.Attribute.isLightTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.isLightTheme;
+			global::Reactive.Bindings.Resource.Attribute.itemPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.itemPadding;
+			global::Reactive.Bindings.Resource.Attribute.layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.layout;
+			global::Reactive.Bindings.Resource.Attribute.listChoiceBackgroundIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Reactive.Bindings.Resource.Attribute.listDividerAlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Reactive.Bindings.Resource.Attribute.listItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.listLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listLayout;
+			global::Reactive.Bindings.Resource.Attribute.listMenuViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.listPopupWindowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemHeightLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemHeightSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemPaddingLeft = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemPaddingRight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Reactive.Bindings.Resource.Attribute.logo = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.logo;
+			global::Reactive.Bindings.Resource.Attribute.logoDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.logoDescription;
+			global::Reactive.Bindings.Resource.Attribute.maxButtonHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.maxButtonHeight;
+			global::Reactive.Bindings.Resource.Attribute.measureWithLargestChild = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Reactive.Bindings.Resource.Attribute.multiChoiceItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.navigationContentDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.navigationContentDescription;
+			global::Reactive.Bindings.Resource.Attribute.navigationIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.navigationIcon;
+			global::Reactive.Bindings.Resource.Attribute.navigationMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.navigationMode;
+			global::Reactive.Bindings.Resource.Attribute.numericModifiers = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.numericModifiers;
+			global::Reactive.Bindings.Resource.Attribute.overlapAnchor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.overlapAnchor;
+			global::Reactive.Bindings.Resource.Attribute.paddingBottomNoButtons = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Reactive.Bindings.Resource.Attribute.paddingEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.paddingEnd;
+			global::Reactive.Bindings.Resource.Attribute.paddingStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.paddingStart;
+			global::Reactive.Bindings.Resource.Attribute.paddingTopNoTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Reactive.Bindings.Resource.Attribute.panelBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.panelBackground;
+			global::Reactive.Bindings.Resource.Attribute.panelMenuListTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Reactive.Bindings.Resource.Attribute.panelMenuListWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Reactive.Bindings.Resource.Attribute.popupMenuStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.popupMenuStyle;
+			global::Reactive.Bindings.Resource.Attribute.popupTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.popupTheme;
+			global::Reactive.Bindings.Resource.Attribute.popupWindowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.popupWindowStyle;
+			global::Reactive.Bindings.Resource.Attribute.preserveIconSpacing = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Reactive.Bindings.Resource.Attribute.progressBarPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.progressBarPadding;
+			global::Reactive.Bindings.Resource.Attribute.progressBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.progressBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.queryBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.queryBackground;
+			global::Reactive.Bindings.Resource.Attribute.queryHint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.queryHint;
+			global::Reactive.Bindings.Resource.Attribute.radioButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.radioButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.ratingBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.ratingBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.ratingBarStyleIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Reactive.Bindings.Resource.Attribute.ratingBarStyleSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Reactive.Bindings.Resource.Attribute.searchHintIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.searchHintIcon;
+			global::Reactive.Bindings.Resource.Attribute.searchIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.searchIcon;
+			global::Reactive.Bindings.Resource.Attribute.searchViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.searchViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.seekBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.seekBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.selectableItemBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.selectableItemBackground;
+			global::Reactive.Bindings.Resource.Attribute.selectableItemBackgroundBorderless = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Reactive.Bindings.Resource.Attribute.showAsAction = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.showAsAction;
+			global::Reactive.Bindings.Resource.Attribute.showDividers = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.showDividers;
+			global::Reactive.Bindings.Resource.Attribute.showText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.showText;
+			global::Reactive.Bindings.Resource.Attribute.showTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.showTitle;
+			global::Reactive.Bindings.Resource.Attribute.singleChoiceItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.spinBars = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.spinBars;
+			global::Reactive.Bindings.Resource.Attribute.spinnerDropDownItemStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Reactive.Bindings.Resource.Attribute.spinnerStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.spinnerStyle;
+			global::Reactive.Bindings.Resource.Attribute.splitTrack = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.splitTrack;
+			global::Reactive.Bindings.Resource.Attribute.srcCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.srcCompat;
+			global::Reactive.Bindings.Resource.Attribute.state_above_anchor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.state_above_anchor;
+			global::Reactive.Bindings.Resource.Attribute.subMenuArrow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.subMenuArrow;
+			global::Reactive.Bindings.Resource.Attribute.submitBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.submitBackground;
+			global::Reactive.Bindings.Resource.Attribute.subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.subtitle;
+			global::Reactive.Bindings.Resource.Attribute.subtitleTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.subtitleTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.subtitleTextColor;
+			global::Reactive.Bindings.Resource.Attribute.subtitleTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.suggestionRowLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Reactive.Bindings.Resource.Attribute.switchMinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.switchMinWidth;
+			global::Reactive.Bindings.Resource.Attribute.switchPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.switchPadding;
+			global::Reactive.Bindings.Resource.Attribute.switchStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.switchStyle;
+			global::Reactive.Bindings.Resource.Attribute.switchTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.switchTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.textAllCaps = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAllCaps;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceLargePopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceListItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceListItemSecondary = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceListItemSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Reactive.Bindings.Resource.Attribute.textAppearancePopupMenuHeader = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceSearchResultTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceSmallPopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Reactive.Bindings.Resource.Attribute.textColorAlertDialogListItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Reactive.Bindings.Resource.Attribute.textColorSearchUrl = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Reactive.Bindings.Resource.Attribute.theme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.theme;
+			global::Reactive.Bindings.Resource.Attribute.thickness = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.thickness;
+			global::Reactive.Bindings.Resource.Attribute.thumbTextPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.thumbTextPadding;
+			global::Reactive.Bindings.Resource.Attribute.thumbTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.thumbTint;
+			global::Reactive.Bindings.Resource.Attribute.thumbTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.thumbTintMode;
+			global::Reactive.Bindings.Resource.Attribute.tickMark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tickMark;
+			global::Reactive.Bindings.Resource.Attribute.tickMarkTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tickMarkTint;
+			global::Reactive.Bindings.Resource.Attribute.tickMarkTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Reactive.Bindings.Resource.Attribute.tint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tint;
+			global::Reactive.Bindings.Resource.Attribute.tintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tintMode;
+			global::Reactive.Bindings.Resource.Attribute.title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.title;
+			global::Reactive.Bindings.Resource.Attribute.titleMargin = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleMargin;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginBottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleMarginBottom;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleMarginEnd;
+			global::Reactive.Bindings.Resource.Attribute.titleMargins = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleMargins;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleMarginStart;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginTop = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleMarginTop;
+			global::Reactive.Bindings.Resource.Attribute.titleTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.titleTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleTextColor;
+			global::Reactive.Bindings.Resource.Attribute.titleTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.titleTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.toolbarNavigationButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.toolbarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.toolbarStyle;
+			global::Reactive.Bindings.Resource.Attribute.tooltipForegroundColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Reactive.Bindings.Resource.Attribute.tooltipFrameBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Reactive.Bindings.Resource.Attribute.tooltipText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.tooltipText;
+			global::Reactive.Bindings.Resource.Attribute.track = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.track;
+			global::Reactive.Bindings.Resource.Attribute.trackTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.trackTint;
+			global::Reactive.Bindings.Resource.Attribute.trackTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.trackTintMode;
+			global::Reactive.Bindings.Resource.Attribute.voiceIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.voiceIcon;
+			global::Reactive.Bindings.Resource.Attribute.windowActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowActionBar;
+			global::Reactive.Bindings.Resource.Attribute.windowActionBarOverlay = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Reactive.Bindings.Resource.Attribute.windowActionModeOverlay = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedHeightMajor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedHeightMinor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedWidthMajor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedWidthMinor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Reactive.Bindings.Resource.Attribute.windowMinWidthMajor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Reactive.Bindings.Resource.Attribute.windowMinWidthMinor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Reactive.Bindings.Resource.Attribute.windowNoTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Attribute.windowNoTitle;
+			global::Reactive.Bindings.Resource.Boolean.abc_action_bar_embed_tabs = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Reactive.Bindings.Resource.Boolean.abc_allow_stacked_button_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Reactive.Bindings.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Reactive.Bindings.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_background_cache_hint_selector_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_btn_colored_borderless_text_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Reactive.Bindings.Resource.Color.abc_btn_colored_text_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Reactive.Bindings.Resource.Color.abc_color_highlight_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_color_highlight_material;
+			global::Reactive.Bindings.Resource.Color.abc_hint_foreground_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_hint_foreground_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_input_method_navigation_guard = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_disable_only_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_disable_only_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_search_url_text;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text_normal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text_pressed = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text_selected = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Reactive.Bindings.Resource.Color.abc_secondary_text_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_secondary_text_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_tint_btn_checkable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Reactive.Bindings.Resource.Color.abc_tint_default = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_tint_default;
+			global::Reactive.Bindings.Resource.Color.abc_tint_edittext = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_tint_edittext;
+			global::Reactive.Bindings.Resource.Color.abc_tint_seek_thumb = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Reactive.Bindings.Resource.Color.abc_tint_spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_tint_spinner;
+			global::Reactive.Bindings.Resource.Color.abc_tint_switch_track = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.abc_tint_switch_track;
+			global::Reactive.Bindings.Resource.Color.accent_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.accent_material_dark;
+			global::Reactive.Bindings.Resource.Color.accent_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.accent_material_light;
+			global::Reactive.Bindings.Resource.Color.background_floating_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.background_floating_material_dark;
+			global::Reactive.Bindings.Resource.Color.background_floating_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.background_floating_material_light;
+			global::Reactive.Bindings.Resource.Color.background_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.background_material_dark;
+			global::Reactive.Bindings.Resource.Color.background_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.background_material_light;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_disabled_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_disabled_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_inverse_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_inverse_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.bright_foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.button_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.button_material_dark;
+			global::Reactive.Bindings.Resource.Color.button_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.button_material_light;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_disabled_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_disabled_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.dim_foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.foreground_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.foreground_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.highlighted_text_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Reactive.Bindings.Resource.Color.highlighted_text_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.highlighted_text_material_light;
+			global::Reactive.Bindings.Resource.Color.material_blue_grey_800 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_blue_grey_800;
+			global::Reactive.Bindings.Resource.Color.material_blue_grey_900 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_blue_grey_900;
+			global::Reactive.Bindings.Resource.Color.material_blue_grey_950 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_blue_grey_950;
+			global::Reactive.Bindings.Resource.Color.material_deep_teal_200 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_deep_teal_200;
+			global::Reactive.Bindings.Resource.Color.material_deep_teal_500 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_deep_teal_500;
+			global::Reactive.Bindings.Resource.Color.material_grey_100 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_100;
+			global::Reactive.Bindings.Resource.Color.material_grey_300 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_300;
+			global::Reactive.Bindings.Resource.Color.material_grey_50 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_50;
+			global::Reactive.Bindings.Resource.Color.material_grey_600 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_600;
+			global::Reactive.Bindings.Resource.Color.material_grey_800 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_800;
+			global::Reactive.Bindings.Resource.Color.material_grey_850 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_850;
+			global::Reactive.Bindings.Resource.Color.material_grey_900 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.material_grey_900;
+			global::Reactive.Bindings.Resource.Color.notification_action_color_filter = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.notification_action_color_filter;
+			global::Reactive.Bindings.Resource.Color.notification_icon_bg_color = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.notification_icon_bg_color;
+			global::Reactive.Bindings.Resource.Color.notification_material_background_media_default_color = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Reactive.Bindings.Resource.Color.primary_dark_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_dark_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_dark_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_dark_material_light;
+			global::Reactive.Bindings.Resource.Color.primary_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_material_light;
+			global::Reactive.Bindings.Resource.Color.primary_text_default_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_text_default_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_text_default_material_light;
+			global::Reactive.Bindings.Resource.Color.primary_text_disabled_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_text_disabled_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.ripple_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.ripple_material_dark;
+			global::Reactive.Bindings.Resource.Color.ripple_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.ripple_material_light;
+			global::Reactive.Bindings.Resource.Color.secondary_text_default_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Reactive.Bindings.Resource.Color.secondary_text_default_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Reactive.Bindings.Resource.Color.secondary_text_disabled_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.secondary_text_disabled_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_disabled_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_disabled_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.switch_thumb_material_light;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_normal_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_normal_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Reactive.Bindings.Resource.Color.tooltip_background_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.tooltip_background_dark;
+			global::Reactive.Bindings.Resource.Color.tooltip_background_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Color.tooltip_background_light;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_content_inset_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_default_height_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_elevation_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_stacked_max_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_button_min_height_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_button_min_width_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_inset_horizontal_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_inset_vertical_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_padding_horizontal_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_padding_vertical_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_config_prefDialogWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Reactive.Bindings.Resource.Dimension.abc_control_corner_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_control_inset_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_control_padding_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_height_major = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_height_minor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_width_major = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_width_minor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_min_width_major = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_min_width_minor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_padding_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_padding_top_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_title_divider_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_disabled_alpha_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.abc_disabled_alpha_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.abc_dropdownitem_icon_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Reactive.Bindings.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Reactive.Bindings.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_edit_text_inset_top_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_floating_window_z = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Reactive.Bindings.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_panel_menu_list_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_progress_bar_height_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_search_view_preferred_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Reactive.Bindings.Resource.Dimension.abc_search_view_preferred_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_seekbar_track_background_height_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_select_dialog_padding_start_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_switch_padding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_switch_padding;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_body_1_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_body_2_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_button_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_caption_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_1_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_2_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_3_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_4_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_headline_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_large_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_medium_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_menu_header_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_menu_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_small_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_subhead_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_title_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_title_material_toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_inset_horizontal_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_inset_vertical_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_padding_horizontal_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_padding_vertical_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_control_corner_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Reactive.Bindings.Resource.Dimension.disabled_alpha_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.disabled_alpha_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.highlight_alpha_material_colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Reactive.Bindings.Resource.Dimension.highlight_alpha_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.highlight_alpha_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.hint_alpha_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.hint_alpha_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.hint_pressed_alpha_material_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.hint_pressed_alpha_material_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.notification_action_icon_size = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_action_text_size = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_action_text_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_big_circle_margin = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Reactive.Bindings.Resource.Dimension.notification_content_margin_start = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Reactive.Bindings.Resource.Dimension.notification_large_icon_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Reactive.Bindings.Resource.Dimension.notification_large_icon_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Reactive.Bindings.Resource.Dimension.notification_main_column_padding_top = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Reactive.Bindings.Resource.Dimension.notification_media_narrow_margin = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Reactive.Bindings.Resource.Dimension.notification_right_icon_size = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_right_side_padding_top = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Reactive.Bindings.Resource.Dimension.notification_small_icon_background_padding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Reactive.Bindings.Resource.Dimension.notification_small_icon_size_as_large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Reactive.Bindings.Resource.Dimension.notification_subtext_size = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_subtext_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_top_pad = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_top_pad;
+			global::Reactive.Bindings.Resource.Dimension.notification_top_pad_large_text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_corner_radius = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_horizontal_padding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_margin = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_margin;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_precise_anchor_threshold = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_vertical_padding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_y_offset_non_touch = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_y_offset_touch = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Reactive.Bindings.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_action_bar_item_background_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_borderless_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_check_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_colored_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_default_mtrl_shape = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_radio_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Reactive.Bindings.Resource.Drawable.abc_cab_background_internal_bg = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Reactive.Bindings.Resource.Drawable.abc_cab_background_top_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_control_background_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_control_background_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_dialog_material_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Reactive.Bindings.Resource.Drawable.abc_edit_text_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_ab_back_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_clear_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_go_search_api_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_overflow_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_search_api_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_black_16dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_black_36dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_black_48dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_half_black_16dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_half_black_36dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_half_black_48dp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_voice_search_api_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_item_background_holo_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_item_background_holo_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_focused_holo = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_longpressed_holo = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_pressed_holo_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_pressed_holo_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_holo_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_holo_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Reactive.Bindings.Resource.Drawable.abc_popup_background_mtrl_mult = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Reactive.Bindings.Resource.Drawable.abc_ratingbar_indicator_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ratingbar_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ratingbar_small_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_seekbar_thumb_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_seekbar_tick_mark_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_seekbar_track_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_spinner_textfield_background_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_switch_thumb_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_tab_indicator_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_search_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_cursor_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_vector_test = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.abc_vector_test;
+			global::Reactive.Bindings.Resource.Drawable.notification_action_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_action_background;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_bg;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_low = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_bg_low;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_low_normal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_low_pressed = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_normal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_bg_normal;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_normal_pressed = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Reactive.Bindings.Resource.Drawable.notification_icon_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_icon_background;
+			global::Reactive.Bindings.Resource.Drawable.notification_template_icon_bg = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Reactive.Bindings.Resource.Drawable.notification_template_icon_low_bg = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Reactive.Bindings.Resource.Drawable.notification_tile_bg = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notification_tile_bg;
+			global::Reactive.Bindings.Resource.Drawable.notify_panel_notification_icon_bg = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Reactive.Bindings.Resource.Drawable.tooltip_frame_dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Reactive.Bindings.Resource.Drawable.tooltip_frame_light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Reactive.Bindings.Resource.Id.action0 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action0;
+			global::Reactive.Bindings.Resource.Id.actions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.actions;
+			global::Reactive.Bindings.Resource.Id.action_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar;
+			global::Reactive.Bindings.Resource.Id.action_bar_activity_content = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar_activity_content;
+			global::Reactive.Bindings.Resource.Id.action_bar_container = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar_container;
+			global::Reactive.Bindings.Resource.Id.action_bar_root = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar_root;
+			global::Reactive.Bindings.Resource.Id.action_bar_spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar_spinner;
+			global::Reactive.Bindings.Resource.Id.action_bar_subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar_subtitle;
+			global::Reactive.Bindings.Resource.Id.action_bar_title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_bar_title;
+			global::Reactive.Bindings.Resource.Id.action_container = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_container;
+			global::Reactive.Bindings.Resource.Id.action_context_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_context_bar;
+			global::Reactive.Bindings.Resource.Id.action_divider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_divider;
+			global::Reactive.Bindings.Resource.Id.action_image = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_image;
+			global::Reactive.Bindings.Resource.Id.action_menu_divider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_menu_divider;
+			global::Reactive.Bindings.Resource.Id.action_menu_presenter = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_menu_presenter;
+			global::Reactive.Bindings.Resource.Id.action_mode_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_mode_bar;
+			global::Reactive.Bindings.Resource.Id.action_mode_bar_stub = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_mode_bar_stub;
+			global::Reactive.Bindings.Resource.Id.action_mode_close_button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_mode_close_button;
+			global::Reactive.Bindings.Resource.Id.action_text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.action_text;
+			global::Reactive.Bindings.Resource.Id.activity_chooser_view_content = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.activity_chooser_view_content;
+			global::Reactive.Bindings.Resource.Id.add = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.add;
+			global::Reactive.Bindings.Resource.Id.alertTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.alertTitle;
+			global::Reactive.Bindings.Resource.Id.ALT = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.ALT;
+			global::Reactive.Bindings.Resource.Id.always = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.always;
+			global::Reactive.Bindings.Resource.Id.async = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.async;
+			global::Reactive.Bindings.Resource.Id.beginning = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.beginning;
+			global::Reactive.Bindings.Resource.Id.blocking = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.blocking;
+			global::Reactive.Bindings.Resource.Id.bottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.bottom;
+			global::Reactive.Bindings.Resource.Id.buttonPanel = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.buttonPanel;
+			global::Reactive.Bindings.Resource.Id.cancel_action = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.cancel_action;
+			global::Reactive.Bindings.Resource.Id.checkbox = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.checkbox;
+			global::Reactive.Bindings.Resource.Id.chronometer = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.chronometer;
+			global::Reactive.Bindings.Resource.Id.collapseActionView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.collapseActionView;
+			global::Reactive.Bindings.Resource.Id.contentPanel = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.contentPanel;
+			global::Reactive.Bindings.Resource.Id.CTRL = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.CTRL;
+			global::Reactive.Bindings.Resource.Id.custom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.custom;
+			global::Reactive.Bindings.Resource.Id.customPanel = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.customPanel;
+			global::Reactive.Bindings.Resource.Id.decor_content_parent = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.decor_content_parent;
+			global::Reactive.Bindings.Resource.Id.default_activity_button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.default_activity_button;
+			global::Reactive.Bindings.Resource.Id.disableHome = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.disableHome;
+			global::Reactive.Bindings.Resource.Id.edit_query = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.edit_query;
+			global::Reactive.Bindings.Resource.Id.end = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.end;
+			global::Reactive.Bindings.Resource.Id.end_padder = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.end_padder;
+			global::Reactive.Bindings.Resource.Id.expanded_menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.expanded_menu;
+			global::Reactive.Bindings.Resource.Id.expand_activities_button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.expand_activities_button;
+			global::Reactive.Bindings.Resource.Id.forever = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.forever;
+			global::Reactive.Bindings.Resource.Id.FUNCTION = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.FUNCTION;
+			global::Reactive.Bindings.Resource.Id.home = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.home;
+			global::Reactive.Bindings.Resource.Id.homeAsUp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.homeAsUp;
+			global::Reactive.Bindings.Resource.Id.icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.icon;
+			global::Reactive.Bindings.Resource.Id.icon_group = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.icon_group;
+			global::Reactive.Bindings.Resource.Id.ifRoom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.ifRoom;
+			global::Reactive.Bindings.Resource.Id.image = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.image;
+			global::Reactive.Bindings.Resource.Id.info = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.info;
+			global::Reactive.Bindings.Resource.Id.italic = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.italic;
+			global::Reactive.Bindings.Resource.Id.line1 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.line1;
+			global::Reactive.Bindings.Resource.Id.line3 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.line3;
+			global::Reactive.Bindings.Resource.Id.listMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.listMode;
+			global::Reactive.Bindings.Resource.Id.list_item = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.list_item;
+			global::Reactive.Bindings.Resource.Id.media_actions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.media_actions;
+			global::Reactive.Bindings.Resource.Id.message = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.message;
+			global::Reactive.Bindings.Resource.Id.META = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.META;
+			global::Reactive.Bindings.Resource.Id.middle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.middle;
+			global::Reactive.Bindings.Resource.Id.multiply = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.multiply;
+			global::Reactive.Bindings.Resource.Id.never = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.never;
+			global::Reactive.Bindings.Resource.Id.none = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.none;
+			global::Reactive.Bindings.Resource.Id.normal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.normal;
+			global::Reactive.Bindings.Resource.Id.notification_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.notification_background;
+			global::Reactive.Bindings.Resource.Id.notification_main_column = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.notification_main_column;
+			global::Reactive.Bindings.Resource.Id.notification_main_column_container = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.notification_main_column_container;
+			global::Reactive.Bindings.Resource.Id.parentPanel = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.parentPanel;
+			global::Reactive.Bindings.Resource.Id.progress_circular = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.progress_circular;
+			global::Reactive.Bindings.Resource.Id.progress_horizontal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.progress_horizontal;
+			global::Reactive.Bindings.Resource.Id.radio = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.radio;
+			global::Reactive.Bindings.Resource.Id.right_icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.right_icon;
+			global::Reactive.Bindings.Resource.Id.right_side = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.right_side;
+			global::Reactive.Bindings.Resource.Id.screen = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.screen;
+			global::Reactive.Bindings.Resource.Id.scrollIndicatorDown = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.scrollIndicatorDown;
+			global::Reactive.Bindings.Resource.Id.scrollIndicatorUp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.scrollIndicatorUp;
+			global::Reactive.Bindings.Resource.Id.scrollView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.scrollView;
+			global::Reactive.Bindings.Resource.Id.search_badge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_badge;
+			global::Reactive.Bindings.Resource.Id.search_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_bar;
+			global::Reactive.Bindings.Resource.Id.search_button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_button;
+			global::Reactive.Bindings.Resource.Id.search_close_btn = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_close_btn;
+			global::Reactive.Bindings.Resource.Id.search_edit_frame = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_edit_frame;
+			global::Reactive.Bindings.Resource.Id.search_go_btn = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_go_btn;
+			global::Reactive.Bindings.Resource.Id.search_mag_icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_mag_icon;
+			global::Reactive.Bindings.Resource.Id.search_plate = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_plate;
+			global::Reactive.Bindings.Resource.Id.search_src_text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_src_text;
+			global::Reactive.Bindings.Resource.Id.search_voice_btn = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.search_voice_btn;
+			global::Reactive.Bindings.Resource.Id.select_dialog_listview = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.select_dialog_listview;
+			global::Reactive.Bindings.Resource.Id.SHIFT = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.SHIFT;
+			global::Reactive.Bindings.Resource.Id.shortcut = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.shortcut;
+			global::Reactive.Bindings.Resource.Id.showCustom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.showCustom;
+			global::Reactive.Bindings.Resource.Id.showHome = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.showHome;
+			global::Reactive.Bindings.Resource.Id.showTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.showTitle;
+			global::Reactive.Bindings.Resource.Id.spacer = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.spacer;
+			global::Reactive.Bindings.Resource.Id.split_action_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.split_action_bar;
+			global::Reactive.Bindings.Resource.Id.src_atop = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.src_atop;
+			global::Reactive.Bindings.Resource.Id.src_in = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.src_in;
+			global::Reactive.Bindings.Resource.Id.src_over = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.src_over;
+			global::Reactive.Bindings.Resource.Id.status_bar_latest_event_content = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Reactive.Bindings.Resource.Id.submenuarrow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.submenuarrow;
+			global::Reactive.Bindings.Resource.Id.submit_area = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.submit_area;
+			global::Reactive.Bindings.Resource.Id.SYM = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.SYM;
+			global::Reactive.Bindings.Resource.Id.tabMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.tabMode;
+			global::Reactive.Bindings.Resource.Id.tag_transition_group = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.tag_transition_group;
+			global::Reactive.Bindings.Resource.Id.text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.text;
+			global::Reactive.Bindings.Resource.Id.text2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.text2;
+			global::Reactive.Bindings.Resource.Id.textSpacerNoButtons = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.textSpacerNoButtons;
+			global::Reactive.Bindings.Resource.Id.textSpacerNoTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.textSpacerNoTitle;
+			global::Reactive.Bindings.Resource.Id.time = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.time;
+			global::Reactive.Bindings.Resource.Id.title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.title;
+			global::Reactive.Bindings.Resource.Id.titleDividerNoCustom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.titleDividerNoCustom;
+			global::Reactive.Bindings.Resource.Id.title_template = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.title_template;
+			global::Reactive.Bindings.Resource.Id.top = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.top;
+			global::Reactive.Bindings.Resource.Id.topPanel = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.topPanel;
+			global::Reactive.Bindings.Resource.Id.uniform = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.uniform;
+			global::Reactive.Bindings.Resource.Id.up = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.up;
+			global::Reactive.Bindings.Resource.Id.useLogo = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.useLogo;
+			global::Reactive.Bindings.Resource.Id.withText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.withText;
+			global::Reactive.Bindings.Resource.Id.wrap_content = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Id.wrap_content;
+			global::Reactive.Bindings.Resource.Integer.abc_config_activityDefaultDur = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Reactive.Bindings.Resource.Integer.abc_config_activityShortDur = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Reactive.Bindings.Resource.Integer.cancel_button_image_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Reactive.Bindings.Resource.Integer.config_tooltipAnimTime = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Reactive.Bindings.Resource.Integer.status_bar_notification_info_maxnum = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Reactive.Bindings.Resource.Layout.abc_action_bar_title_item = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Reactive.Bindings.Resource.Layout.abc_action_bar_up_container = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Reactive.Bindings.Resource.Layout.abc_action_menu_item_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_action_menu_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_action_mode_bar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Reactive.Bindings.Resource.Layout.abc_action_mode_close_item_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Reactive.Bindings.Resource.Layout.abc_activity_chooser_view = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Reactive.Bindings.Resource.Layout.abc_activity_chooser_view_list_item = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Reactive.Bindings.Resource.Layout.abc_alert_dialog_button_bar_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Reactive.Bindings.Resource.Layout.abc_alert_dialog_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Reactive.Bindings.Resource.Layout.abc_alert_dialog_title_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Reactive.Bindings.Resource.Layout.abc_dialog_title_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Reactive.Bindings.Resource.Layout.abc_expanded_menu_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_checkbox = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_radio = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Reactive.Bindings.Resource.Layout.abc_popup_menu_header_item_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_popup_menu_item_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_content_include = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_screen_content_include;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_simple = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_screen_simple;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Reactive.Bindings.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Reactive.Bindings.Resource.Layout.abc_search_view = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_search_view;
+			global::Reactive.Bindings.Resource.Layout.abc_select_dialog_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Reactive.Bindings.Resource.Layout.notification_action = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_action;
+			global::Reactive.Bindings.Resource.Layout.notification_action_tombstone = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_action_tombstone;
+			global::Reactive.Bindings.Resource.Layout.notification_media_action = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_media_action;
+			global::Reactive.Bindings.Resource.Layout.notification_media_cancel_action = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_big_media;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media_custom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media_narrow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media_narrow_custom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Reactive.Bindings.Resource.Layout.notification_template_custom_big = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_custom_big;
+			global::Reactive.Bindings.Resource.Layout.notification_template_icon_group = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_icon_group;
+			global::Reactive.Bindings.Resource.Layout.notification_template_lines_media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_lines_media;
+			global::Reactive.Bindings.Resource.Layout.notification_template_media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_media;
+			global::Reactive.Bindings.Resource.Layout.notification_template_media_custom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_media_custom;
+			global::Reactive.Bindings.Resource.Layout.notification_template_part_chronometer = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Reactive.Bindings.Resource.Layout.notification_template_part_time = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.notification_template_part_time;
+			global::Reactive.Bindings.Resource.Layout.select_dialog_item_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.select_dialog_item_material;
+			global::Reactive.Bindings.Resource.Layout.select_dialog_multichoice_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Reactive.Bindings.Resource.Layout.select_dialog_singlechoice_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Reactive.Bindings.Resource.Layout.support_simple_spinner_dropdown_item = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Reactive.Bindings.Resource.String.abc_action_bar_home_description = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_action_bar_home_description;
+			global::Reactive.Bindings.Resource.String.abc_action_bar_up_description = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_action_bar_up_description;
+			global::Reactive.Bindings.Resource.String.abc_action_menu_overflow_description = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Reactive.Bindings.Resource.String.abc_action_mode_done = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_action_mode_done;
+			global::Reactive.Bindings.Resource.String.abc_activitychooserview_choose_application = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Reactive.Bindings.Resource.String.abc_activity_chooser_view_see_all = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Reactive.Bindings.Resource.String.abc_capital_off = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_capital_off;
+			global::Reactive.Bindings.Resource.String.abc_capital_on = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_capital_on;
+			global::Reactive.Bindings.Resource.String.abc_font_family_body_1_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_body_2_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_button_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_button_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_caption_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_caption_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_1_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_2_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_3_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_4_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_headline_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_headline_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_menu_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_menu_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_subhead_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_title_material = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_font_family_title_material;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_clear = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_searchview_description_clear;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_query = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_searchview_description_query;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_search = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_searchview_description_search;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_submit = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_searchview_description_submit;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_voice = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_searchview_description_voice;
+			global::Reactive.Bindings.Resource.String.abc_search_hint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_search_hint;
+			global::Reactive.Bindings.Resource.String.abc_shareactionprovider_share_with = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Reactive.Bindings.Resource.String.abc_shareactionprovider_share_with_application = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Reactive.Bindings.Resource.String.abc_toolbar_collapse_description = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Reactive.Bindings.Resource.String.app_name = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.app_name;
+			global::Reactive.Bindings.Resource.String.hello = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.hello;
+			global::Reactive.Bindings.Resource.String.search_menu_title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.search_menu_title;
+			global::Reactive.Bindings.Resource.String.status_bar_notification_info_overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Reactive.Bindings.Resource.Style.AlertDialog_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Reactive.Bindings.Resource.Style.AlertDialog_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Animation_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Animation_AppCompat_DropDownUp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Reactive.Bindings.Resource.Style.Animation_AppCompat_Tooltip = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.Base_AlertDialog_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_Animation_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Reactive.Bindings.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V22_Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V23_Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V26_Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_EditText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SearchView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Reactive.Bindings.Resource.Style.Platform_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Reactive.Bindings.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_V21_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_V21_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_V25_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_V25_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Reactive.Bindings.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Reactive.Bindings.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Body1 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Body2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Caption = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display1 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display3 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display4 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Headline = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Medium = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Subhead = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Tooltip = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Info = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Time = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_CompactMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_Dialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_NoActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ButtonBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Borderless = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Colored = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_EditText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ImageButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_SearchView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListMenuView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListView_Menu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_PopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_PopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ProgressBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_RatingBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SearchView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SeekBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Reactive.Bindings.Resource.Style.Widget_Compat_NotificationActionContainer = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Reactive.Bindings.Resource.Style.Widget_Compat_NotificationActionText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar;
+			global::Reactive.Bindings.Resource.Styleable.ActionBarLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBarLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_background;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_backgroundSplit = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_backgroundStacked = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetLeft = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetRight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_customNavigationLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_displayOptions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_divider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_divider;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_elevation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_height;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_hideOnContentScroll = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_homeLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_icon;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_itemPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_logo = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_logo;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_navigationMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_popupTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_progressBarPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_progressBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_subtitleTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_title;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_titleTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionMenuItemView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Reactive.Bindings.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Reactive.Bindings.Resource.Styleable.ActionMenuView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMenuView;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode_background;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_backgroundSplit = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_closeItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode_height;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_subtitleTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_titleTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActivityChooserView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActivityChooserView;
+			global::Reactive.Bindings.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Reactive.Bindings.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_android_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_listItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_listLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_showTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatImageView;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_android_src = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_srcCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_tint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_tintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_tickMark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_fontFamily = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_textAllCaps = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorAccent = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorError = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorPrimary = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_controlBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dialogTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dividerVertical = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_editTextBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_editTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_editTextStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_panelBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_switchStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowActionBar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Reactive.Bindings.Resource.Styleable.ButtonBarLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Reactive.Bindings.Resource.Styleable.ButtonBarLayout_allowStacking = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ColorStateListItem;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem_android_alpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem_android_color = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.CompoundButton;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton_android_button = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton_buttonTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton_buttonTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_barLength = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_color = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_spinBars = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_thickness = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_android_font = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_font = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_fontStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_fontWeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderAuthority = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderCerts = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderPackage = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderQuery = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_divider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_showDividers = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Reactive.Bindings.Resource.Styleable.ListPopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ListPopupWindow;
+			global::Reactive.Bindings.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Reactive.Bindings.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_enabled = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_id = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_menuCategory = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_orderInCategory = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_visible = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_actionLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_actionProviderClass = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_actionViewClass = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_alphabeticModifiers = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_checkable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_checked = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_enabled = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_icon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_id = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_menuCategory = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_numericShortcut = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_onClick = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_orderInCategory = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_titleCondensed = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_visible = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_contentDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_iconTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_iconTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_numericModifiers = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_showAsAction = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_tooltipText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Reactive.Bindings.Resource.Styleable.MenuView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_headerBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_horizontalDivider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_itemBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_itemTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_verticalDivider = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_preserveIconSpacing = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_subMenuArrow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.PopupWindow;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindowBackgroundState = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow_android_popupBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow_overlapAnchor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Reactive.Bindings.Resource.Styleable.RecycleListView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.RecycleListView;
+			global::Reactive.Bindings.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Reactive.Bindings.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Reactive.Bindings.Resource.Styleable.SearchView = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_focusable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_imeOptions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_inputType = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_maxWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_closeIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_commitIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_defaultQueryHint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_goIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_iconifiedByDefault = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_layout;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_queryBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_queryHint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_searchHintIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_searchIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_submitBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_suggestionRowLayout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_voiceIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Reactive.Bindings.Resource.Styleable.Spinner = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Spinner;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_dropDownWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_entries = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_popupBackground = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_prompt = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_popupTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_android_textOff = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_android_textOn = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_android_thumb = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_showText = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_splitTrack = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_switchMinWidth = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_switchPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_thumbTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_thumbTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_track = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_trackTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_trackTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_fontFamily = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowDx = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowDy = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowRadius = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textColorHint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textColorLink = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textSize = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textStyle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_typeface = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_fontFamily = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_textAllCaps = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_android_gravity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_android_minHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_buttonGravity = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_collapseContentDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_collapseIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetLeft = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetRight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_logo = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_logo;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_logoDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_maxButtonHeight = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_navigationContentDescription = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_navigationIcon = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_popupTheme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_subtitle = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_subtitleTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_title = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_title;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMargin = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginBottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMargins = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginTop = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleTextAppearance = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleTextColor = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Reactive.Bindings.Resource.Styleable.View = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.View;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper_android_background = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewStubCompat;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat_android_id = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat_android_layout = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Reactive.Bindings.Resource.Styleable.View_android_focusable = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.View_android_focusable;
+			global::Reactive.Bindings.Resource.Styleable.View_android_theme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.View_android_theme;
+			global::Reactive.Bindings.Resource.Styleable.View_paddingEnd = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.View_paddingEnd;
+			global::Reactive.Bindings.Resource.Styleable.View_paddingStart = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.View_paddingStart;
+			global::Reactive.Bindings.Resource.Styleable.View_theme = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.FirebaseStorage.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -7202,65 +8706,65 @@ namespace Plugin.FirebaseStorage.Sample.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f0a0005
-			public const int abc_config_activityDefaultDur = 2131361797;
+			// aapt resource value: 0x7f090005
+			public const int abc_config_activityDefaultDur = 2131296261;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int abc_config_activityShortDur = 2131361798;
+			// aapt resource value: 0x7f090006
+			public const int abc_config_activityShortDur = 2131296262;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int app_bar_elevation_anim_duration = 2131361802;
+			// aapt resource value: 0x7f09000a
+			public const int app_bar_elevation_anim_duration = 2131296266;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int bottom_sheet_slide_duration = 2131361803;
+			// aapt resource value: 0x7f09000b
+			public const int bottom_sheet_slide_duration = 2131296267;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int cancel_button_image_alpha = 2131361799;
+			// aapt resource value: 0x7f090007
+			public const int cancel_button_image_alpha = 2131296263;
 			
-			// aapt resource value: 0x7f0a0008
-			public const int config_tooltipAnimTime = 2131361800;
+			// aapt resource value: 0x7f090008
+			public const int config_tooltipAnimTime = 2131296264;
 			
-			// aapt resource value: 0x7f0a0009
-			public const int design_snackbar_text_max_lines = 2131361801;
+			// aapt resource value: 0x7f090009
+			public const int design_snackbar_text_max_lines = 2131296265;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int design_tab_indicator_anim_duration_ms = 2131361804;
+			// aapt resource value: 0x7f09000c
+			public const int design_tab_indicator_anim_duration_ms = 2131296268;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int google_play_services_version = 2131361792;
+			// aapt resource value: 0x7f090000
+			public const int google_play_services_version = 2131296256;
 			
-			// aapt resource value: 0x7f0a000d
-			public const int hide_password_duration = 2131361805;
+			// aapt resource value: 0x7f09000d
+			public const int hide_password_duration = 2131296269;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int mr_controller_volume_group_list_animation_duration_ms = 2131361793;
+			// aapt resource value: 0x7f090001
+			public const int mr_controller_volume_group_list_animation_duration_ms = 2131296257;
 			
-			// aapt resource value: 0x7f0a0002
-			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131361794;
+			// aapt resource value: 0x7f090002
+			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131296258;
 			
-			// aapt resource value: 0x7f0a0003
-			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131361795;
+			// aapt resource value: 0x7f090003
+			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131296259;
 			
-			// aapt resource value: 0x7f0a0004
-			public const int mr_update_routes_delay_ms = 2131361796;
+			// aapt resource value: 0x7f090004
+			public const int mr_update_routes_delay_ms = 2131296260;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int mtrl_btn_anim_delay_ms = 2131361806;
+			// aapt resource value: 0x7f09000e
+			public const int mtrl_btn_anim_delay_ms = 2131296270;
 			
-			// aapt resource value: 0x7f0a000f
-			public const int mtrl_btn_anim_duration_ms = 2131361807;
+			// aapt resource value: 0x7f09000f
+			public const int mtrl_btn_anim_duration_ms = 2131296271;
 			
-			// aapt resource value: 0x7f0a0010
-			public const int mtrl_chip_anim_duration = 2131361808;
+			// aapt resource value: 0x7f090010
+			public const int mtrl_chip_anim_duration = 2131296272;
 			
-			// aapt resource value: 0x7f0a0011
-			public const int mtrl_tab_indicator_anim_duration_ms = 2131361809;
+			// aapt resource value: 0x7f090011
+			public const int mtrl_tab_indicator_anim_duration_ms = 2131296273;
 			
-			// aapt resource value: 0x7f0a0012
-			public const int show_password_duration = 2131361810;
+			// aapt resource value: 0x7f090012
+			public const int show_password_duration = 2131296274;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int status_bar_notification_info_maxnum = 2131361811;
+			// aapt resource value: 0x7f090013
+			public const int status_bar_notification_info_maxnum = 2131296275;
 			
 			static Integer()
 			{
@@ -7590,320 +9094,320 @@ namespace Plugin.FirebaseStorage.Sample.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f090068
-			public const int ApplicationName = 2131296360;
+			// aapt resource value: 0x7f0a002a
+			public const int abc_action_bar_home_description = 2131361834;
 			
-			// aapt resource value: 0x7f090067
-			public const int Hello = 2131296359;
+			// aapt resource value: 0x7f0a002b
+			public const int abc_action_bar_up_description = 2131361835;
 			
-			// aapt resource value: 0x7f090031
-			public const int abc_action_bar_home_description = 2131296305;
+			// aapt resource value: 0x7f0a002c
+			public const int abc_action_menu_overflow_description = 2131361836;
 			
-			// aapt resource value: 0x7f090032
-			public const int abc_action_bar_up_description = 2131296306;
+			// aapt resource value: 0x7f0a002d
+			public const int abc_action_mode_done = 2131361837;
 			
-			// aapt resource value: 0x7f090033
-			public const int abc_action_menu_overflow_description = 2131296307;
+			// aapt resource value: 0x7f0a002e
+			public const int abc_activity_chooser_view_see_all = 2131361838;
 			
-			// aapt resource value: 0x7f090034
-			public const int abc_action_mode_done = 2131296308;
+			// aapt resource value: 0x7f0a002f
+			public const int abc_activitychooserview_choose_application = 2131361839;
 			
-			// aapt resource value: 0x7f090035
-			public const int abc_activity_chooser_view_see_all = 2131296309;
+			// aapt resource value: 0x7f0a0030
+			public const int abc_capital_off = 2131361840;
 			
-			// aapt resource value: 0x7f090036
-			public const int abc_activitychooserview_choose_application = 2131296310;
+			// aapt resource value: 0x7f0a0031
+			public const int abc_capital_on = 2131361841;
 			
-			// aapt resource value: 0x7f090037
-			public const int abc_capital_off = 2131296311;
+			// aapt resource value: 0x7f0a0046
+			public const int abc_font_family_body_1_material = 2131361862;
 			
-			// aapt resource value: 0x7f090038
-			public const int abc_capital_on = 2131296312;
+			// aapt resource value: 0x7f0a0047
+			public const int abc_font_family_body_2_material = 2131361863;
 			
-			// aapt resource value: 0x7f09004d
-			public const int abc_font_family_body_1_material = 2131296333;
+			// aapt resource value: 0x7f0a0048
+			public const int abc_font_family_button_material = 2131361864;
 			
-			// aapt resource value: 0x7f09004e
-			public const int abc_font_family_body_2_material = 2131296334;
+			// aapt resource value: 0x7f0a0049
+			public const int abc_font_family_caption_material = 2131361865;
 			
-			// aapt resource value: 0x7f09004f
-			public const int abc_font_family_button_material = 2131296335;
+			// aapt resource value: 0x7f0a004a
+			public const int abc_font_family_display_1_material = 2131361866;
 			
-			// aapt resource value: 0x7f090050
-			public const int abc_font_family_caption_material = 2131296336;
+			// aapt resource value: 0x7f0a004b
+			public const int abc_font_family_display_2_material = 2131361867;
 			
-			// aapt resource value: 0x7f090051
-			public const int abc_font_family_display_1_material = 2131296337;
+			// aapt resource value: 0x7f0a004c
+			public const int abc_font_family_display_3_material = 2131361868;
 			
-			// aapt resource value: 0x7f090052
-			public const int abc_font_family_display_2_material = 2131296338;
+			// aapt resource value: 0x7f0a004d
+			public const int abc_font_family_display_4_material = 2131361869;
 			
-			// aapt resource value: 0x7f090053
-			public const int abc_font_family_display_3_material = 2131296339;
+			// aapt resource value: 0x7f0a004e
+			public const int abc_font_family_headline_material = 2131361870;
 			
-			// aapt resource value: 0x7f090054
-			public const int abc_font_family_display_4_material = 2131296340;
+			// aapt resource value: 0x7f0a004f
+			public const int abc_font_family_menu_material = 2131361871;
 			
-			// aapt resource value: 0x7f090055
-			public const int abc_font_family_headline_material = 2131296341;
+			// aapt resource value: 0x7f0a0050
+			public const int abc_font_family_subhead_material = 2131361872;
 			
-			// aapt resource value: 0x7f090056
-			public const int abc_font_family_menu_material = 2131296342;
+			// aapt resource value: 0x7f0a0051
+			public const int abc_font_family_title_material = 2131361873;
 			
-			// aapt resource value: 0x7f090057
-			public const int abc_font_family_subhead_material = 2131296343;
+			// aapt resource value: 0x7f0a0032
+			public const int abc_menu_alt_shortcut_label = 2131361842;
 			
-			// aapt resource value: 0x7f090058
-			public const int abc_font_family_title_material = 2131296344;
+			// aapt resource value: 0x7f0a0033
+			public const int abc_menu_ctrl_shortcut_label = 2131361843;
 			
-			// aapt resource value: 0x7f090039
-			public const int abc_menu_alt_shortcut_label = 2131296313;
+			// aapt resource value: 0x7f0a0034
+			public const int abc_menu_delete_shortcut_label = 2131361844;
 			
-			// aapt resource value: 0x7f09003a
-			public const int abc_menu_ctrl_shortcut_label = 2131296314;
+			// aapt resource value: 0x7f0a0035
+			public const int abc_menu_enter_shortcut_label = 2131361845;
 			
-			// aapt resource value: 0x7f09003b
-			public const int abc_menu_delete_shortcut_label = 2131296315;
+			// aapt resource value: 0x7f0a0036
+			public const int abc_menu_function_shortcut_label = 2131361846;
 			
-			// aapt resource value: 0x7f09003c
-			public const int abc_menu_enter_shortcut_label = 2131296316;
+			// aapt resource value: 0x7f0a0037
+			public const int abc_menu_meta_shortcut_label = 2131361847;
 			
-			// aapt resource value: 0x7f09003d
-			public const int abc_menu_function_shortcut_label = 2131296317;
+			// aapt resource value: 0x7f0a0038
+			public const int abc_menu_shift_shortcut_label = 2131361848;
 			
-			// aapt resource value: 0x7f09003e
-			public const int abc_menu_meta_shortcut_label = 2131296318;
+			// aapt resource value: 0x7f0a0039
+			public const int abc_menu_space_shortcut_label = 2131361849;
 			
-			// aapt resource value: 0x7f09003f
-			public const int abc_menu_shift_shortcut_label = 2131296319;
+			// aapt resource value: 0x7f0a003a
+			public const int abc_menu_sym_shortcut_label = 2131361850;
 			
-			// aapt resource value: 0x7f090040
-			public const int abc_menu_space_shortcut_label = 2131296320;
+			// aapt resource value: 0x7f0a003b
+			public const int abc_prepend_shortcut_label = 2131361851;
 			
-			// aapt resource value: 0x7f090041
-			public const int abc_menu_sym_shortcut_label = 2131296321;
+			// aapt resource value: 0x7f0a003c
+			public const int abc_search_hint = 2131361852;
 			
-			// aapt resource value: 0x7f090042
-			public const int abc_prepend_shortcut_label = 2131296322;
+			// aapt resource value: 0x7f0a003d
+			public const int abc_searchview_description_clear = 2131361853;
 			
-			// aapt resource value: 0x7f090043
-			public const int abc_search_hint = 2131296323;
+			// aapt resource value: 0x7f0a003e
+			public const int abc_searchview_description_query = 2131361854;
 			
-			// aapt resource value: 0x7f090044
-			public const int abc_searchview_description_clear = 2131296324;
+			// aapt resource value: 0x7f0a003f
+			public const int abc_searchview_description_search = 2131361855;
 			
-			// aapt resource value: 0x7f090045
-			public const int abc_searchview_description_query = 2131296325;
+			// aapt resource value: 0x7f0a0040
+			public const int abc_searchview_description_submit = 2131361856;
 			
-			// aapt resource value: 0x7f090046
-			public const int abc_searchview_description_search = 2131296326;
+			// aapt resource value: 0x7f0a0041
+			public const int abc_searchview_description_voice = 2131361857;
 			
-			// aapt resource value: 0x7f090047
-			public const int abc_searchview_description_submit = 2131296327;
+			// aapt resource value: 0x7f0a0042
+			public const int abc_shareactionprovider_share_with = 2131361858;
 			
-			// aapt resource value: 0x7f090048
-			public const int abc_searchview_description_voice = 2131296328;
+			// aapt resource value: 0x7f0a0043
+			public const int abc_shareactionprovider_share_with_application = 2131361859;
 			
-			// aapt resource value: 0x7f090049
-			public const int abc_shareactionprovider_share_with = 2131296329;
+			// aapt resource value: 0x7f0a0044
+			public const int abc_toolbar_collapse_description = 2131361860;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_shareactionprovider_share_with_application = 2131296330;
+			// aapt resource value: 0x7f0a0061
+			public const int app_name = 2131361889;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_toolbar_collapse_description = 2131296331;
+			// aapt resource value: 0x7f0a0052
+			public const int appbar_scrolling_view_behavior = 2131361874;
 			
-			// aapt resource value: 0x7f090059
-			public const int appbar_scrolling_view_behavior = 2131296345;
+			// aapt resource value: 0x7f0a0053
+			public const int bottom_sheet_behavior = 2131361875;
 			
-			// aapt resource value: 0x7f09005a
-			public const int bottom_sheet_behavior = 2131296346;
+			// aapt resource value: 0x7f0a0054
+			public const int character_counter_content_description = 2131361876;
 			
-			// aapt resource value: 0x7f09005b
-			public const int character_counter_content_description = 2131296347;
+			// aapt resource value: 0x7f0a0055
+			public const int character_counter_pattern = 2131361877;
 			
-			// aapt resource value: 0x7f09005c
-			public const int character_counter_pattern = 2131296348;
+			// aapt resource value: 0x7f0a0001
+			public const int common_google_play_services_enable_button = 2131361793;
 			
-			// aapt resource value: 0x7f090008
-			public const int common_google_play_services_enable_button = 2131296264;
+			// aapt resource value: 0x7f0a0002
+			public const int common_google_play_services_enable_text = 2131361794;
 			
-			// aapt resource value: 0x7f090009
-			public const int common_google_play_services_enable_text = 2131296265;
+			// aapt resource value: 0x7f0a0003
+			public const int common_google_play_services_enable_title = 2131361795;
 			
-			// aapt resource value: 0x7f09000a
-			public const int common_google_play_services_enable_title = 2131296266;
+			// aapt resource value: 0x7f0a0004
+			public const int common_google_play_services_install_button = 2131361796;
 			
-			// aapt resource value: 0x7f09000b
-			public const int common_google_play_services_install_button = 2131296267;
+			// aapt resource value: 0x7f0a0005
+			public const int common_google_play_services_install_text = 2131361797;
 			
-			// aapt resource value: 0x7f09000c
-			public const int common_google_play_services_install_text = 2131296268;
+			// aapt resource value: 0x7f0a0006
+			public const int common_google_play_services_install_title = 2131361798;
 			
-			// aapt resource value: 0x7f09000d
-			public const int common_google_play_services_install_title = 2131296269;
+			// aapt resource value: 0x7f0a0007
+			public const int common_google_play_services_notification_channel_name = 2131361799;
 			
-			// aapt resource value: 0x7f09000e
-			public const int common_google_play_services_notification_channel_name = 2131296270;
+			// aapt resource value: 0x7f0a0008
+			public const int common_google_play_services_notification_ticker = 2131361800;
 			
-			// aapt resource value: 0x7f09000f
-			public const int common_google_play_services_notification_ticker = 2131296271;
+			// aapt resource value: 0x7f0a0000
+			public const int common_google_play_services_unknown_issue = 2131361792;
 			
-			// aapt resource value: 0x7f090007
-			public const int common_google_play_services_unknown_issue = 2131296263;
+			// aapt resource value: 0x7f0a0009
+			public const int common_google_play_services_unsupported_text = 2131361801;
 			
-			// aapt resource value: 0x7f090010
-			public const int common_google_play_services_unsupported_text = 2131296272;
+			// aapt resource value: 0x7f0a000a
+			public const int common_google_play_services_update_button = 2131361802;
 			
-			// aapt resource value: 0x7f090011
-			public const int common_google_play_services_update_button = 2131296273;
+			// aapt resource value: 0x7f0a000b
+			public const int common_google_play_services_update_text = 2131361803;
 			
-			// aapt resource value: 0x7f090012
-			public const int common_google_play_services_update_text = 2131296274;
+			// aapt resource value: 0x7f0a000c
+			public const int common_google_play_services_update_title = 2131361804;
 			
-			// aapt resource value: 0x7f090013
-			public const int common_google_play_services_update_title = 2131296275;
+			// aapt resource value: 0x7f0a000d
+			public const int common_google_play_services_updating_text = 2131361805;
 			
-			// aapt resource value: 0x7f090014
-			public const int common_google_play_services_updating_text = 2131296276;
+			// aapt resource value: 0x7f0a000e
+			public const int common_google_play_services_wear_update_text = 2131361806;
 			
-			// aapt resource value: 0x7f090015
-			public const int common_google_play_services_wear_update_text = 2131296277;
+			// aapt resource value: 0x7f0a000f
+			public const int common_open_on_phone = 2131361807;
 			
-			// aapt resource value: 0x7f090016
-			public const int common_open_on_phone = 2131296278;
+			// aapt resource value: 0x7f0a0010
+			public const int common_signin_button_text = 2131361808;
 			
-			// aapt resource value: 0x7f090017
-			public const int common_signin_button_text = 2131296279;
+			// aapt resource value: 0x7f0a0011
+			public const int common_signin_button_text_long = 2131361809;
 			
-			// aapt resource value: 0x7f090018
-			public const int common_signin_button_text_long = 2131296280;
+			// aapt resource value: 0x7f0a0056
+			public const int fab_transformation_scrim_behavior = 2131361878;
 			
-			// aapt resource value: 0x7f09005d
-			public const int fab_transformation_scrim_behavior = 2131296349;
+			// aapt resource value: 0x7f0a0057
+			public const int fab_transformation_sheet_behavior = 2131361879;
 			
-			// aapt resource value: 0x7f09005e
-			public const int fab_transformation_sheet_behavior = 2131296350;
+			// aapt resource value: 0x7f0a0064
+			public const int firebase_database_url = 2131361892;
 			
-			// aapt resource value: 0x7f090002
-			public const int firebase_database_url = 2131296258;
+			// aapt resource value: 0x7f0a0062
+			public const int gcm_defaultSenderId = 2131361890;
 			
-			// aapt resource value: 0x7f090000
-			public const int gcm_defaultSenderId = 2131296256;
+			// aapt resource value: 0x7f0a0065
+			public const int google_api_key = 2131361893;
 			
-			// aapt resource value: 0x7f090003
-			public const int google_api_key = 2131296259;
+			// aapt resource value: 0x7f0a0063
+			public const int google_app_id = 2131361891;
 			
-			// aapt resource value: 0x7f090001
-			public const int google_app_id = 2131296257;
+			// aapt resource value: 0x7f0a0066
+			public const int google_crash_reporting_api_key = 2131361894;
 			
-			// aapt resource value: 0x7f090004
-			public const int google_crash_reporting_api_key = 2131296260;
+			// aapt resource value: 0x7f0a0067
+			public const int google_storage_bucket = 2131361895;
 			
-			// aapt resource value: 0x7f090005
-			public const int google_storage_bucket = 2131296261;
+			// aapt resource value: 0x7f0a0060
+			public const int hello = 2131361888;
 			
-			// aapt resource value: 0x7f09005f
-			public const int hide_bottom_view_on_scroll_behavior = 2131296351;
+			// aapt resource value: 0x7f0a0058
+			public const int hide_bottom_view_on_scroll_behavior = 2131361880;
 			
-			// aapt resource value: 0x7f090019
-			public const int mr_button_content_description = 2131296281;
+			// aapt resource value: 0x7f0a0012
+			public const int mr_button_content_description = 2131361810;
 			
-			// aapt resource value: 0x7f09001a
-			public const int mr_cast_button_connected = 2131296282;
+			// aapt resource value: 0x7f0a0013
+			public const int mr_cast_button_connected = 2131361811;
 			
-			// aapt resource value: 0x7f09001b
-			public const int mr_cast_button_connecting = 2131296283;
+			// aapt resource value: 0x7f0a0014
+			public const int mr_cast_button_connecting = 2131361812;
 			
-			// aapt resource value: 0x7f09001c
-			public const int mr_cast_button_disconnected = 2131296284;
+			// aapt resource value: 0x7f0a0015
+			public const int mr_cast_button_disconnected = 2131361813;
 			
-			// aapt resource value: 0x7f09002e
-			public const int mr_cast_dialog_title_view_placeholder = 2131296302;
+			// aapt resource value: 0x7f0a0027
+			public const int mr_cast_dialog_title_view_placeholder = 2131361831;
 			
-			// aapt resource value: 0x7f09001d
-			public const int mr_chooser_searching = 2131296285;
+			// aapt resource value: 0x7f0a0016
+			public const int mr_chooser_searching = 2131361814;
 			
-			// aapt resource value: 0x7f09001e
-			public const int mr_chooser_title = 2131296286;
+			// aapt resource value: 0x7f0a0017
+			public const int mr_chooser_title = 2131361815;
 			
-			// aapt resource value: 0x7f09001f
-			public const int mr_controller_album_art = 2131296287;
+			// aapt resource value: 0x7f0a0018
+			public const int mr_controller_album_art = 2131361816;
 			
-			// aapt resource value: 0x7f090020
-			public const int mr_controller_casting_screen = 2131296288;
+			// aapt resource value: 0x7f0a0019
+			public const int mr_controller_casting_screen = 2131361817;
 			
-			// aapt resource value: 0x7f090021
-			public const int mr_controller_close_description = 2131296289;
+			// aapt resource value: 0x7f0a001a
+			public const int mr_controller_close_description = 2131361818;
 			
-			// aapt resource value: 0x7f090022
-			public const int mr_controller_collapse_group = 2131296290;
+			// aapt resource value: 0x7f0a001b
+			public const int mr_controller_collapse_group = 2131361819;
 			
-			// aapt resource value: 0x7f090023
-			public const int mr_controller_disconnect = 2131296291;
+			// aapt resource value: 0x7f0a001c
+			public const int mr_controller_disconnect = 2131361820;
 			
-			// aapt resource value: 0x7f090024
-			public const int mr_controller_expand_group = 2131296292;
+			// aapt resource value: 0x7f0a001d
+			public const int mr_controller_expand_group = 2131361821;
 			
-			// aapt resource value: 0x7f090025
-			public const int mr_controller_no_info_available = 2131296293;
+			// aapt resource value: 0x7f0a001e
+			public const int mr_controller_no_info_available = 2131361822;
 			
-			// aapt resource value: 0x7f090026
-			public const int mr_controller_no_media_selected = 2131296294;
+			// aapt resource value: 0x7f0a001f
+			public const int mr_controller_no_media_selected = 2131361823;
 			
-			// aapt resource value: 0x7f090027
-			public const int mr_controller_pause = 2131296295;
+			// aapt resource value: 0x7f0a0020
+			public const int mr_controller_pause = 2131361824;
 			
-			// aapt resource value: 0x7f090028
-			public const int mr_controller_play = 2131296296;
+			// aapt resource value: 0x7f0a0021
+			public const int mr_controller_play = 2131361825;
 			
-			// aapt resource value: 0x7f090029
-			public const int mr_controller_stop = 2131296297;
+			// aapt resource value: 0x7f0a0022
+			public const int mr_controller_stop = 2131361826;
 			
-			// aapt resource value: 0x7f09002a
-			public const int mr_controller_stop_casting = 2131296298;
+			// aapt resource value: 0x7f0a0023
+			public const int mr_controller_stop_casting = 2131361827;
 			
-			// aapt resource value: 0x7f09002b
-			public const int mr_controller_volume_slider = 2131296299;
+			// aapt resource value: 0x7f0a0024
+			public const int mr_controller_volume_slider = 2131361828;
 			
-			// aapt resource value: 0x7f09002f
-			public const int mr_dialog_device_header = 2131296303;
+			// aapt resource value: 0x7f0a0028
+			public const int mr_dialog_device_header = 2131361832;
 			
-			// aapt resource value: 0x7f090030
-			public const int mr_dialog_route_header = 2131296304;
+			// aapt resource value: 0x7f0a0029
+			public const int mr_dialog_route_header = 2131361833;
 			
-			// aapt resource value: 0x7f09002c
-			public const int mr_system_route_name = 2131296300;
+			// aapt resource value: 0x7f0a0025
+			public const int mr_system_route_name = 2131361829;
 			
-			// aapt resource value: 0x7f09002d
-			public const int mr_user_route_category_name = 2131296301;
+			// aapt resource value: 0x7f0a0026
+			public const int mr_user_route_category_name = 2131361830;
 			
-			// aapt resource value: 0x7f090060
-			public const int mtrl_chip_close_icon_content_description = 2131296352;
+			// aapt resource value: 0x7f0a0059
+			public const int mtrl_chip_close_icon_content_description = 2131361881;
 			
-			// aapt resource value: 0x7f090061
-			public const int password_toggle_content_description = 2131296353;
+			// aapt resource value: 0x7f0a005a
+			public const int password_toggle_content_description = 2131361882;
 			
-			// aapt resource value: 0x7f090062
-			public const int path_password_eye = 2131296354;
+			// aapt resource value: 0x7f0a005b
+			public const int path_password_eye = 2131361883;
 			
-			// aapt resource value: 0x7f090063
-			public const int path_password_eye_mask_strike_through = 2131296355;
+			// aapt resource value: 0x7f0a005c
+			public const int path_password_eye_mask_strike_through = 2131361884;
 			
-			// aapt resource value: 0x7f090064
-			public const int path_password_eye_mask_visible = 2131296356;
+			// aapt resource value: 0x7f0a005d
+			public const int path_password_eye_mask_visible = 2131361885;
 			
-			// aapt resource value: 0x7f090065
-			public const int path_password_strike_through = 2131296357;
+			// aapt resource value: 0x7f0a005e
+			public const int path_password_strike_through = 2131361886;
 			
-			// aapt resource value: 0x7f090006
-			public const int project_id = 2131296262;
+			// aapt resource value: 0x7f0a0068
+			public const int project_id = 2131361896;
 			
-			// aapt resource value: 0x7f09004c
-			public const int search_menu_title = 2131296332;
+			// aapt resource value: 0x7f0a0045
+			public const int search_menu_title = 2131361861;
 			
-			// aapt resource value: 0x7f090066
-			public const int status_bar_notification_info_overflow = 2131296358;
+			// aapt resource value: 0x7f0a005f
+			public const int status_bar_notification_info_overflow = 2131361887;
 			
 			static String()
 			{

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Plugin.FirebaseStorage.Sample.ViewModels
 {
-    public class ViewModelBase : BindableBase, INavigationAware, IDestructible
+    public class ViewModelBase : BindableBase, INavigationAware, IInitialize, IDestructible
     {
         protected INavigationService NavigationService { get; private set; }
 
@@ -33,7 +33,7 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
 
         }
 
-        public virtual void OnNavigatingTo(INavigationParameters parameters)
+        public virtual void Initialize(INavigationParameters parameters)
         {
 
         }
