@@ -1,18 +1,50 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType></DebugType>
-    <DocumentationFile>bin\Release\netstandard2.0\Plugin.FirebaseStorage.xml</DocumentationFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="Class1.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
-  </ItemGroup>
-  <Import Project="..\Plugin.FirebaseStorage.Shared\Plugin.FirebaseStorage.Shared.projitems" Label="Shared" Condition="Exists('..\Plugin.FirebaseStorage.Shared\Plugin.FirebaseStorage.Shared.projitems')" />
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
+        <AssemblyName>Plugin.FirebaseStorage</AssemblyName>
+        <RootNamespace>Plugin.FirebaseStorage</RootNamespace>
+        <PackageId>Plugin.FirebaseStorage</PackageId>
+        <Product>$(AssemblyName) ($(TargetFramework))</Product>
+        <Version>3.0.0</Version>
+        <PackageVersion>3.0.0</PackageVersion>
+        <PackOnBuild>true</PackOnBuild>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>default</LangVersion>
+        <DefineConstants>$(DefineConstants);</DefineConstants>
+        <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <LangVersion>latest</LangVersion>
+        <DebugType>portable</DebugType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/f-miyu/Plugin.FirebaseStorage</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/f-miyu/Plugin.FirebaseStorage</RepositoryUrl>
+        <PackageTags>xamarin, ios, android, xamarin.forms, plugin, firebase, storage</PackageTags>
+        <Title>Firebase Storage Plugin for Xamarin</Title>
+        <Description>Cross platform plugin for Firebase Storage</Description>
+        <Owners>f-miyu</Owners>
+        <Authors>f-miyu</Authors>
+        <DisableExtraReferences>true</DisableExtraReferences>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+        <DebugSymbols>true</DebugSymbols>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Shared\**\*.cs" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+    </ItemGroup>
+    <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+        <Compile Include="Android\**\*.cs" />
+        <PackageReference Include="Xamarin.Firebase.Storage" Version="71.1602.0" PrivateAssets="none" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+        <Compile Include="iOS\**\*.cs" />
+        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.4.0.1" PrivateAssets="none" />
+    </ItemGroup>
 </Project>

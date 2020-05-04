@@ -50,7 +50,7 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
 
                     file.Dispose();
 
-                    Image.Value = ImageSource.FromStream(() => null);
+                    Image.Value = null;
                     UploadProgress.Value = 0;
                     DownloadProgress.Value = 0;
                     Name.Value = null;
