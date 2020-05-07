@@ -6,8 +6,8 @@
         <RootNamespace>Plugin.FirebaseStorage</RootNamespace>
         <PackageId>Plugin.FirebaseStorage</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>3.0.0</Version>
-        <PackageVersion>3.0.0</PackageVersion>
+        <Version>3.1.0</Version>
+        <PackageVersion>3.1.0</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>default</LangVersion>
@@ -24,6 +24,7 @@
         <Description>Cross platform plugin for Firebase Storage</Description>
         <Owners>f-miyu</Owners>
         <Authors>f-miyu</Authors>
+        <Copyright>Copyright (c) 2018 f-miyu</Copyright>
         <DisableExtraReferences>true</DisableExtraReferences>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
@@ -45,6 +46,6 @@
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.4.0.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.6.0" PrivateAssets="none" />
     </ItemGroup>
 </Project>
