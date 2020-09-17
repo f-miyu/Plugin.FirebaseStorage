@@ -4,7 +4,7 @@ namespace Plugin.FirebaseStorage
 {
     public struct PauseToken : IEquatable<PauseToken>
     {
-        public static PauseToken None => default(PauseToken);
+        public static PauseToken None => default;
 
         private readonly PauseTokenSource _source;
 

@@ -6,9 +6,14 @@ using Foundation;
 using System.Threading;
 namespace Plugin.FirebaseStorage
 {
-    public class StorageReferenceWrapper : IStorageReference
+    public class StorageReferenceWrapper : IStorageReference, IEquatable<StorageReferenceWrapper>
     {
         private readonly StorageReference _storageReference;
+
+        public StorageReferenceWrapper(StorageReference storageReference)
+        {
+            _storageReference = storageReference ?? throw new ArgumentNullException(nameof(storageReference));
+        }
 
         public string Name => _storageReference.Name;
 
@@ -16,7 +21,7 @@ namespace Plugin.FirebaseStorage
 
         public string Bucket => _storageReference.Bucket;
 
-        public IStorageReference Parent
+        public IStorageReference? Parent
         {
             get
             {
@@ -25,29 +30,22 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public IStorageReference Root
-        {
-            get
-            {
-                var root = _storageReference.Root;
-                return root != null ? new StorageReferenceWrapper(root) : null;
-            }
-        }
+        public IStorageReference Root => new StorageReferenceWrapper(_storageReference.Root);
 
-        public IStorage Storage => _storageReference.Storage != null ? StorageProvider.GetStorage(_storageReference.Storage) : null;
-
-        public StorageReferenceWrapper(StorageReference storageReference)
-        {
-            _storageReference = storageReference;
-        }
+        public IStorage Storage => StorageProvider.GetStorage(_storageReference.Storage);
 
         public IStorageReference GetChild(string path)
+        {
+            return Child(path);
+        }
+
+        public IStorageReference Child(string path)
         {
             var reference = _storageReference.GetChild(path);
             return new StorageReferenceWrapper(reference);
         }
 
-        public Task PutStreamAsync(Stream stream, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutStreamAsync(Stream stream, MetadataChange? metadata = null, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
@@ -59,7 +57,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public Task PutBytesAsync(byte[] bytes, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutBytesAsync(byte[] bytes, MetadataChange? metadata = null, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             if (bytes == null)
                 throw new ArgumentNullException(nameof(bytes));
@@ -84,12 +82,12 @@ namespace Plugin.FirebaseStorage
                 uploadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(uploadTask.Cancel);
             }
 
-            if (pauseToken != default(PauseToken))
+            if (pauseToken != default)
             {
                 pauseToken.SetStorageTask(new StorageUploadTaskWrapper(uploadTask));
             }
@@ -97,7 +95,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task PutFileAsync(string filePath, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutFileAsync(string filePath, MetadataChange? metadata = null, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
@@ -121,12 +119,12 @@ namespace Plugin.FirebaseStorage
                 uploadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(uploadTask.Cancel);
             }
 
-            if (pauseToken != default(PauseToken))
+            if (pauseToken != default)
             {
                 pauseToken.SetStorageTask(new StorageUploadTaskWrapper(uploadTask));
             }
@@ -134,13 +132,13 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public async Task<Stream> GetStreamAsync(IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<Stream> GetStreamAsync(IProgress<IDownloadState>? progress = null, CancellationToken cancellationToken = default)
         {
             var data = await GetBytesAsync(long.MaxValue, progress, cancellationToken).ConfigureAwait(false);
             return new MemoryStream(data);
         }
 
-        public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState>? progress = null, CancellationToken cancellationToken = default)
         {
             var tcs = new TaskCompletionSource<byte[]>();
 
@@ -161,7 +159,7 @@ namespace Plugin.FirebaseStorage
                 downloadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(downloadTask.Cancel);
             }
@@ -169,7 +167,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public Task GetFileAsync(string filePath, IProgress<IDownloadState>? progress = null, CancellationToken cancellationToken = default)
         {
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
@@ -195,7 +193,7 @@ namespace Plugin.FirebaseStorage
                 downloadTask.ObserveStatus(StorageTaskStatus.Progress, snapshot => progress.Report(new StorageTaskSnapshotWrapper(snapshot)));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(downloadTask.Cancel);
             }
@@ -255,6 +253,82 @@ namespace Plugin.FirebaseStorage
             {
                 throw ExceptionMapper.Map(e);
             }
+        }
+
+        public Task<IListResult> List(int maxResults)
+        {
+            var tcs = new TaskCompletionSource<IListResult>();
+
+            _storageReference.List(maxResults, (result, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                }
+                else
+                {
+                    tcs.SetResult(new ListResultWrapper(result));
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task<IListResult> List(int maxResults, string pageToken)
+        {
+            var tcs = new TaskCompletionSource<IListResult>();
+
+            _storageReference.List(maxResults, pageToken, (result, error) =>
+             {
+                 if (error != null)
+                 {
+                     tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                 }
+                 else
+                 {
+                     tcs.SetResult(new ListResultWrapper(result));
+                 }
+             });
+
+            return tcs.Task;
+        }
+
+        public Task<IListResult> ListAll()
+        {
+            var tcs = new TaskCompletionSource<IListResult>();
+
+            _storageReference.ListAll((result, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(new NSErrorException(error)));
+                }
+                else
+                {
+                    tcs.SetResult(new ListResultWrapper(result));
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return Equals(obj as StorageReferenceWrapper);
+        }
+
+        public bool Equals(StorageReferenceWrapper? other)
+        {
+            if (other is null) return false;
+            if (ReferenceEquals(this, other)) return true;
+            if (GetType() != other.GetType()) return false;
+            if (ReferenceEquals(_storageReference, other._storageReference)) return true;
+            return _storageReference.Equals(other._storageReference);
+        }
+
+        public override int GetHashCode()
+        {
+            return _storageReference.GetHashCode();
         }
     }
 }

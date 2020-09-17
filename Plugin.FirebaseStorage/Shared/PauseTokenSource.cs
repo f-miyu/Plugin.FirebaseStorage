@@ -3,7 +3,7 @@ namespace Plugin.FirebaseStorage
 {
     public class PauseTokenSource
     {
-        internal IStorageTask StorageTask { get; set; }
+        internal IStorageTask? StorageTask { get; set; }
 
         public PauseToken Token => new PauseToken(this);
 

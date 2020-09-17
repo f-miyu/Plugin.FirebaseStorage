@@ -4,8 +4,8 @@ namespace Plugin.FirebaseStorage
 {
     public class MetadataChange
     {
-        private string _cacheControl;
-        public string CacheControl
+        private string? _cacheControl;
+        public string? CacheControl
         {
             get => _cacheControl;
             set
@@ -15,8 +15,8 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        private string _contentDisposition;
-        public string ContentDisposition
+        private string? _contentDisposition;
+        public string? ContentDisposition
         {
             get => _contentDisposition;
             set
@@ -26,8 +26,8 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        private string _contentEncoding;
-        public string ContentEncoding
+        private string? _contentEncoding;
+        public string? ContentEncoding
         {
             get => _contentEncoding;
             set
@@ -37,8 +37,8 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        private string _contentLanguage;
-        public string ContentLanguage
+        private string? _contentLanguage;
+        public string? ContentLanguage
         {
             get => _contentLanguage;
             set
@@ -48,8 +48,8 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        private string _contentType;
-        public string ContentType
+        private string? _contentType;
+        public string? ContentType
         {
             get => _contentType;
             set
@@ -59,7 +59,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public IDictionary<string, string> CustomMetadata { get; set; }
+        public IDictionary<string, string>? CustomMetadata { get; set; }
 
         internal bool IsCacheControlChanged { get; private set; }
         internal bool IsContentDispositionChanged { get; private set; }

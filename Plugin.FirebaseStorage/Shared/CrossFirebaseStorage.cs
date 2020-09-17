@@ -6,7 +6,7 @@ namespace Plugin.FirebaseStorage
     /// </summary>
     public static class CrossFirebaseStorage
     {
-        static Lazy<IFirebaseStorage> implementation = new Lazy<IFirebaseStorage>(() => CreateFirebaseStorage(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
+        static Lazy<IFirebaseStorage?> implementation = new Lazy<IFirebaseStorage?>(() => CreateFirebaseStorage(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>
         /// Gets if the plugin is supported on the current platform.
@@ -20,7 +20,7 @@ namespace Plugin.FirebaseStorage
         {
             get
             {
-                IFirebaseStorage ret = implementation.Value;
+                IFirebaseStorage? ret = implementation.Value;
                 if (ret == null)
                 {
                     throw NotImplementedInReferenceAssembly();
@@ -29,9 +29,9 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        static IFirebaseStorage CreateFirebaseStorage()
+        static IFirebaseStorage? CreateFirebaseStorage()
         {
-#if NETSTANDARD1_0 || NETSTANDARD2_0
+#if NETSTANDARD
             return null;
 #else
 #pragma warning disable IDE0022 // Use expression body for methods

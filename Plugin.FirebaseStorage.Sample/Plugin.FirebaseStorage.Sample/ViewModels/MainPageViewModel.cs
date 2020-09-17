@@ -58,7 +58,7 @@ namespace Plugin.FirebaseStorage.Sample.ViewModels
                     CreationTime.Value = null;
                     Url.Value = null;
 
-                    var reference = CrossFirebaseStorage.Current.Instance.RootReference.GetChild(name);
+                    var reference = CrossFirebaseStorage.Current.Instance.RootReference.Child(name);
 
                     var uploadProgress = new Progress<IUploadState>();
                     uploadProgress.ProgressChanged += (sender, e) =>

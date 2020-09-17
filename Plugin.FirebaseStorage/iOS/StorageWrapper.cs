@@ -3,9 +3,14 @@ using Firebase.Storage;
 
 namespace Plugin.FirebaseStorage
 {
-    public class StorageWrapper : IStorage
+    public class StorageWrapper : IStorage, IEquatable<StorageWrapper>
     {
         private readonly Storage _storage;
+
+        public StorageWrapper(Storage storage)
+        {
+            _storage = storage ?? throw new ArgumentNullException(nameof(storage));
+        }
 
         public IStorageReference RootReference => new StorageReferenceWrapper(_storage.GetRootReference());
 
@@ -27,11 +32,6 @@ namespace Plugin.FirebaseStorage
             set => _storage.MaxUploadRetryTime = value.TotalSeconds;
         }
 
-        public StorageWrapper(Storage storage)
-        {
-            _storage = storage;
-        }
-
         public IStorageReference GetReferenceFromPath(string path)
         {
             var reference = _storage.GetReferenceFromPath(path);
@@ -42,6 +42,25 @@ namespace Plugin.FirebaseStorage
         {
             var reference = _storage.GetReferenceFromUrl(url);
             return new StorageReferenceWrapper(reference);
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return Equals(obj as StorageWrapper);
+        }
+
+        public bool Equals(StorageWrapper? other)
+        {
+            if (other is null) return false;
+            if (ReferenceEquals(this, other)) return true;
+            if (GetType() != other.GetType()) return false;
+            if (ReferenceEquals(_storage, other._storage)) return true;
+            return _storage.Equals(other._storage);
+        }
+
+        public override int GetHashCode()
+        {
+            return _storage.GetHashCode();
         }
     }
 }

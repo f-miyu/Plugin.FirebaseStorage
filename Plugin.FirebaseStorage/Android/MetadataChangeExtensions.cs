@@ -4,7 +4,7 @@ namespace Plugin.FirebaseStorage
 {
     internal static class MetadataChangeExtensions
     {
-        public static StorageMetadata ToStorageMetadata(this MetadataChange self)
+        public static StorageMetadata? ToStorageMetadata(this MetadataChange self)
         {
             if (self == null) return null;
 

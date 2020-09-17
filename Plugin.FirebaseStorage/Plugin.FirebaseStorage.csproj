@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras/2.0.54">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0</TargetFrameworks>
         <AssemblyName>Plugin.FirebaseStorage</AssemblyName>
         <RootNamespace>Plugin.FirebaseStorage</RootNamespace>
         <PackageId>Plugin.FirebaseStorage</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>3.1.0</Version>
-        <PackageVersion>3.1.0</PackageVersion>
+        <Version>4.0.0-pre01</Version>
+        <PackageVersion>4.0.0-pre01</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>default</LangVersion>
@@ -26,6 +26,7 @@
         <Authors>f-miyu</Authors>
         <Copyright>Copyright (c) 2018 f-miyu</Copyright>
         <DisableExtraReferences>true</DisableExtraReferences>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
         <DebugSymbols>true</DebugSymbols>
@@ -42,10 +43,10 @@
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
         <Compile Include="Android\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.Storage" Version="71.1602.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.Storage" Version="119.1.1-preview02" PrivateAssets="contentFiles;analyzers" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.6.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.6.0" />
     </ItemGroup>
 </Project>

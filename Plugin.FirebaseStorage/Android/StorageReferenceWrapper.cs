@@ -6,12 +6,18 @@ using Firebase.Storage;
 using Android.Runtime;
 using Java.IO;
 using Android.Gms.Common.Apis;
+using Android.Gms.Extensions;
 
 namespace Plugin.FirebaseStorage
 {
-    public class StorageReferenceWrapper : IStorageReference
+    public class StorageReferenceWrapper : IStorageReference, IEquatable<StorageReferenceWrapper>
     {
         private readonly StorageReference _storageReference;
+
+        public StorageReferenceWrapper(StorageReference storageReference)
+        {
+            _storageReference = storageReference ?? throw new ArgumentNullException(nameof(storageReference));
+        }
 
         public string Name => _storageReference.Name;
 
@@ -19,7 +25,7 @@ namespace Plugin.FirebaseStorage
 
         public string Bucket => _storageReference.Bucket;
 
-        public IStorageReference Parent
+        public IStorageReference? Parent
         {
             get
             {
@@ -28,29 +34,22 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public IStorageReference Root
-        {
-            get
-            {
-                var root = _storageReference.Root;
-                return root != null ? new StorageReferenceWrapper(root) : null;
-            }
-        }
+        public IStorageReference Root => new StorageReferenceWrapper(_storageReference.Root);
 
-        public IStorage Storage => _storageReference.Storage != null ? StorageProvider.GetStorage(_storageReference.Storage) : null;
-
-        public StorageReferenceWrapper(StorageReference storageReference)
-        {
-            _storageReference = storageReference;
-        }
+        public IStorage Storage => StorageProvider.GetStorage(_storageReference.Storage);
 
         public IStorageReference GetChild(string path)
+        {
+            return Child(path);
+        }
+
+        public IStorageReference Child(string path)
         {
             var reference = _storageReference.Child(path);
             return new StorageReferenceWrapper(reference);
         }
 
-        public Task PutStreamAsync(Stream stream, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutStreamAsync(Stream stream, MetadataChange? metadata = null, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
@@ -62,7 +61,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public Task PutBytesAsync(byte[] bytes, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutBytesAsync(byte[] bytes, MetadataChange? metadata = null, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             if (bytes == null)
                 throw new ArgumentNullException(nameof(bytes));
@@ -81,7 +80,7 @@ namespace Plugin.FirebaseStorage
             return Upload(uploadTask, progress, cancellationToken, pauseToken);
         }
 
-        public Task PutFileAsync(string filePath, MetadataChange metadata = null, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        public Task PutFileAsync(string filePath, MetadataChange? metadata = null, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             if (filePath == null)
                 throw new ArgumentNullException(nameof(filePath));
@@ -102,7 +101,7 @@ namespace Plugin.FirebaseStorage
             return Upload(uploadTask, progress, cancellationToken, pauseToken);
         }
 
-        private Task Upload(UploadTask uploadTask, IProgress<IUploadState> progress = null, CancellationToken cancellationToken = default(CancellationToken), PauseToken pauseToken = default(PauseToken))
+        private Task Upload(UploadTask uploadTask, IProgress<IUploadState>? progress = null, CancellationToken cancellationToken = default, PauseToken pauseToken = default)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -123,16 +122,16 @@ namespace Plugin.FirebaseStorage
                 uploadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
                 {
                     var uploadTaskSnapshot = snapshot.JavaCast<UploadTask.TaskSnapshot>();
-                    progress.Report(new UploadTaskSnapshotWrapper(uploadTaskSnapshot));
+                    progress.Report(new UploadTaskSnapshotWrapper(uploadTaskSnapshot!));
                 }));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(() => uploadTask.Cancel());
             }
 
-            if (pauseToken != default(PauseToken))
+            if (pauseToken != default)
             {
                 pauseToken.SetStorageTask(new StorageTaskWrapper(uploadTask));
             }
@@ -140,7 +139,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task<Stream> GetStreamAsync(IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public Task<Stream> GetStreamAsync(IProgress<IDownloadState>? progress = null, CancellationToken cancellationToken = default)
         {
             var tcs = new TaskCompletionSource<Stream>();
 
@@ -154,7 +153,7 @@ namespace Plugin.FirebaseStorage
                     Task.Run(() =>
                     {
                         var ms = new MemoryStream();
-                        downloadTaskSnapshot.Stream.CopyTo(ms);
+                        downloadTaskSnapshot!.Stream.CopyTo(ms);
                         ms.Seek(0, SeekOrigin.Begin);
                         tcs.TrySetResult(ms);
                     })
@@ -174,11 +173,11 @@ namespace Plugin.FirebaseStorage
                 downloadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
                 {
                     var downloadTaskSnapshot = snapshot.JavaCast<StreamDownloadTask.TaskSnapshot>();
-                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
+                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot!));
                 }));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(() => downloadTask.Cancel());
             }
@@ -186,7 +185,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public Task<byte[]> GetBytesAsync(long maxDownloadSizeBytes, IProgress<IDownloadState>? progress = null, CancellationToken cancellationToken = default)
         {
             var tcs = new TaskCompletionSource<byte[]>();
 
@@ -206,11 +205,11 @@ namespace Plugin.FirebaseStorage
                 downloadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
                 {
                     var downloadTaskSnapshot = snapshot.JavaCast<StreamDownloadTask.TaskSnapshot>();
-                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
+                    progress.Report(new StreamDownloadTaskSnapshotWrapper(downloadTaskSnapshot!));
                 }));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(() => downloadTask.Cancel());
             }
@@ -218,7 +217,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task GetFileAsync(string filePath, IProgress<IDownloadState> progress = null, CancellationToken cancellationToken = default(CancellationToken))
+        public Task GetFileAsync(string filePath, IProgress<IDownloadState>? progress = null, CancellationToken cancellationToken = default)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -241,11 +240,11 @@ namespace Plugin.FirebaseStorage
                 downloadTask.AddOnProgressListener(new OnProgressHandlerListener(snapshot =>
                 {
                     var downloadTaskSnapshot = snapshot.JavaCast<FileDownloadTask.TaskSnapshot>();
-                    progress.Report(new FileDownloadTaskSnapshotWrapper(downloadTaskSnapshot));
+                    progress.Report(new FileDownloadTaskSnapshotWrapper(downloadTaskSnapshot!));
                 }));
             }
 
-            if (cancellationToken != default(CancellationToken))
+            if (cancellationToken != default)
             {
                 cancellationToken.Register(() => downloadTask.Cancel());
             }
@@ -287,7 +286,7 @@ namespace Plugin.FirebaseStorage
                 if (task.IsSuccessful)
                 {
                     var result = task.Result.JavaCast<StorageMetadata>();
-                    tcs.SetResult(new StorageMetadataWrapper(result));
+                    tcs.SetResult(new StorageMetadataWrapper(result!));
                 }
                 else
                 {
@@ -307,7 +306,7 @@ namespace Plugin.FirebaseStorage
                 if (task.IsSuccessful)
                 {
                     var result = task.Result.JavaCast<StorageMetadata>();
-                    tcs.SetResult(new StorageMetadataWrapper(result));
+                    tcs.SetResult(new StorageMetadataWrapper(result!));
                 }
                 else
                 {
@@ -316,6 +315,64 @@ namespace Plugin.FirebaseStorage
             }));
 
             return tcs.Task;
+        }
+
+        public async Task<IListResult> List(int maxResults)
+        {
+            try
+            {
+                var result = await _storageReference.List(maxResults).AsAsync<ListResult>().ConfigureAwait(false);
+                return new ListResultWrapper(result);
+            }
+            catch (Exception e)
+            {
+                throw ExceptionMapper.Map(e);
+            }
+        }
+
+        public async Task<IListResult> List(int maxResults, string pageToken)
+        {
+            try
+            {
+                var result = await _storageReference.List(maxResults, pageToken).AsAsync<ListResult>().ConfigureAwait(false);
+                return new ListResultWrapper(result);
+            }
+            catch (Exception e)
+            {
+                throw ExceptionMapper.Map(e);
+            }
+        }
+
+        public async Task<IListResult> ListAll()
+        {
+            try
+            {
+                var result = await _storageReference.ListAll().AsAsync<ListResult>().ConfigureAwait(false);
+                return new ListResultWrapper(result);
+            }
+            catch (Exception e)
+            {
+                throw ExceptionMapper.Map(e);
+            }
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return Equals(obj as StorageReferenceWrapper);
+        }
+
+        public bool Equals(StorageReferenceWrapper? other)
+        {
+            if (other is null) return false;
+            if (ReferenceEquals(this, other)) return true;
+            if (GetType() != other.GetType()) return false;
+            if (ReferenceEquals(_storageReference, other._storageReference)) return true;
+            return _storageReference.Equals(other._storageReference);
+        }
+
+        public override int GetHashCode()
+        {
+            return _storageReference.GetHashCode();
         }
 
         private class StreamProcessor : Java.Lang.Object, StreamDownloadTask.IStreamProcessor
@@ -347,7 +404,7 @@ namespace Plugin.FirebaseStorage
                         buffer.Write(data, 0, n);
                     }
                     buffer.Flush();
-                    _tcs.TrySetResult(buffer.ToByteArray());
+                    _tcs.TrySetResult(buffer.ToByteArray()!);
                 }
                 catch (FirebaseStorageException e)
                 {
