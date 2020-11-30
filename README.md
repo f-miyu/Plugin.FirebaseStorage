@@ -196,13 +196,13 @@ await reference.DeleteAsync();
 ### List files
 ```C#
 // All
-var result = await CrossFirebaseStorage.Current.Instance.RootReference.ListAll();
+var result = await CrossFirebaseStorage.Current.Instance.RootReference.ListAllAsync();
 var items = result.Items.ToList();
 
 // Pagination
-var result1 = await CrossFirebaseStorage.Current.Instance.RootReference.List(10);
+var result1 = await CrossFirebaseStorage.Current.Instance.RootReference.ListAsync(10);
 var token = result1.PageToken;
-var result2 = await CrossFirebaseStorage.Current.Instance.RootReference.List(10, token);
+var result2 = await CrossFirebaseStorage.Current.Instance.RootReference.ListAsync(10, token);
 ```
 
 ### Use multiple projects
