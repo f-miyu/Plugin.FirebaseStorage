@@ -255,7 +255,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public Task<IListResult> List(int maxResults)
+        public Task<IListResult> ListAsync(int maxResults)
         {
             var tcs = new TaskCompletionSource<IListResult>();
 
@@ -274,7 +274,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task<IListResult> List(int maxResults, string pageToken)
+        public Task<IListResult> ListAsync(int maxResults, string pageToken)
         {
             var tcs = new TaskCompletionSource<IListResult>();
 
@@ -293,7 +293,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public Task<IListResult> ListAll()
+        public Task<IListResult> ListAllAsync()
         {
             var tcs = new TaskCompletionSource<IListResult>();
 

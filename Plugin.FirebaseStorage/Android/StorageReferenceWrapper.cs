@@ -317,7 +317,7 @@ namespace Plugin.FirebaseStorage
             return tcs.Task;
         }
 
-        public async Task<IListResult> List(int maxResults)
+        public async Task<IListResult> ListAsync(int maxResults)
         {
             try
             {
@@ -330,7 +330,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public async Task<IListResult> List(int maxResults, string pageToken)
+        public async Task<IListResult> ListAsync(int maxResults, string pageToken)
         {
             try
             {
@@ -343,7 +343,7 @@ namespace Plugin.FirebaseStorage
             }
         }
 
-        public async Task<IListResult> ListAll()
+        public async Task<IListResult> ListAllAsync()
         {
             try
             {

@@ -28,8 +28,8 @@ namespace Plugin.FirebaseStorage
         Task DeleteAsync();
         Task<IStorageMetadata> GetMetadataAsync();
         Task<IStorageMetadata> UpdateMetadataAsync(MetadataChange metadata);
-        Task<IListResult> List(int maxResults);
-        Task<IListResult> List(int maxResults, string pageToken);
-        Task<IListResult> ListAll();
+        Task<IListResult> ListAsync(int maxResults);
+        Task<IListResult> ListAsync(int maxResults, string pageToken);
+        Task<IListResult> ListAllAsync();
     }
 }
