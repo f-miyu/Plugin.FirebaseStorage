@@ -150,7 +150,7 @@ namespace Plugin.FirebaseStorage
                 }
                 else
                 {
-                    tcs.SetResult(data.ToArray());
+                    tcs.SetResult(data!.ToArray());
                 }
             });
 
@@ -246,7 +246,7 @@ namespace Plugin.FirebaseStorage
 
             try
             {
-                var result = await _storageReference.UpdateMetadataAsync(metadata.ToStorageMetadata()).ConfigureAwait(false);
+                var result = await _storageReference.UpdateMetadataAsync(metadata.ToStorageMetadata()!).ConfigureAwait(false);
                 return new StorageMetadataWrapper(result);
             }
             catch (NSErrorException e)

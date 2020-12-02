@@ -6,8 +6,8 @@
         <RootNamespace>Plugin.FirebaseStorage</RootNamespace>
         <PackageId>Plugin.FirebaseStorage</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>4.0.1</Version>
-        <PackageVersion>4.0.1</PackageVersion>
+        <Version>4.1.0</Version>
+        <PackageVersion>4.1.0</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <DefineConstants>$(DefineConstants);</DefineConstants>
@@ -46,6 +46,6 @@
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.6.0" />
+        <PackageReference Include="Xamarin.Firebase.iOS.Storage" Version="3.9.1" />
     </ItemGroup>
 </Project>
